@@ -964,6 +964,185 @@ h3 {
   padding: 0 13px;
 }
 
+.school-profile-card {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  max-width: 620px;
+  margin-bottom: 28px;
+  padding: 22px 24px 20px 30px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, transparent 0 53px, rgb(49 87 213 / 12%) 53px 54px, transparent 54px),
+    repeating-linear-gradient(0deg, transparent 0 35px, rgb(82 96 90 / 10%) 35px 36px),
+    var(--paper-raised);
+  box-shadow: 8px 8px 0 var(--paper-deep);
+}
+
+.school-profile-card::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: linear-gradient(var(--blue) 0 38%, var(--green) 38% 72%, var(--gold) 72% 100%);
+  content: "";
+}
+
+.school-card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+}
+
+.school-card-topline strong {
+  padding: 4px 9px;
+  border: 1px solid var(--green);
+  border-radius: 999px;
+  color: var(--green);
+  background: var(--green-soft);
+  letter-spacing: 0.06em;
+}
+
+.school-card-name {
+  max-width: 16em;
+  font-size: clamp(1.55rem, 4vw, 2.3rem);
+  font-weight: 950;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.school-profile-card dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.school-profile-card dl > div {
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper-raised) 88%, transparent);
+}
+
+.school-profile-card dt {
+  margin-bottom: 3px;
+  color: var(--ink-soft);
+  font-size: 0.66rem;
+  font-weight: 800;
+}
+
+.school-profile-card dd {
+  margin: 0;
+  font-size: 0.84rem;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.school-profile-card > p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.school-form {
+  position: relative;
+}
+
+.school-combobox {
+  position: relative;
+  display: block;
+}
+
+.school-combobox input[type="search"] {
+  width: 100%;
+  padding-right: 46px;
+}
+
+.school-search-mark {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  color: var(--blue);
+  font-size: 1.15rem;
+  font-weight: 900;
+  pointer-events: none;
+  transform: translateY(-52%);
+}
+
+.school-search-results {
+  display: grid;
+  max-height: 360px;
+  margin-top: -1px;
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--blue);
+  background: var(--paper-raised);
+  box-shadow: var(--shadow);
+}
+
+.school-search-results[hidden] {
+  display: none;
+}
+
+.school-suggestion {
+  display: grid;
+  gap: 3px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.school-suggestion:last-child {
+  border-bottom: 0;
+}
+
+.school-suggestion:hover,
+.school-suggestion:focus-visible {
+  background: var(--blue-soft);
+}
+
+.school-suggestion strong {
+  font-size: 0.92rem;
+}
+
+.school-suggestion small {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+}
+
+.school-search-empty {
+  margin: 0;
+  padding: 14px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.school-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.school-clear-action {
+  min-height: 44px;
+  color: var(--orange);
+}
+
 .select-shell {
   position: relative;
   display: block;
@@ -1200,6 +1379,15 @@ h3 {
 
   .desktop-rail {
     display: none;
+  }
+
+  .school-profile-card {
+    padding: 19px 18px 18px 25px;
+    box-shadow: 5px 5px 0 var(--paper-deep);
+  }
+
+  .school-profile-card dl {
+    grid-template-columns: 1fr;
   }
 
   .mobile-header {

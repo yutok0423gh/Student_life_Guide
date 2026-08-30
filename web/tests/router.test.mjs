@@ -17,3 +17,8 @@ test("文章 id 会被解码且未知路径进入 404", () => {
   assert.equal(parseHash("#/guide/guide_first_rental").params.id, "guide_first_rental");
   assert.equal(parseHash("#/unknown").name, "notFound");
 });
+
+test("学校资料页使用独立的非底部导航路由", () => {
+  assert.equal(parseHash("#/school").name, "school");
+  assert.equal(parseHash("#/school/").name, "school");
+});

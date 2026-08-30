@@ -5,6 +5,7 @@ const ROUTES = [
   { name: "profile", pattern: /^\/profile\/?$/ },
   { name: "emergency", pattern: /^\/emergency\/?$/ },
   { name: "region", pattern: /^\/region\/?$/ },
+  { name: "school", pattern: /^\/school\/?$/ },
   { name: "stage", pattern: /^\/stage\/?$/ },
   { name: "category", pattern: /^\/category\/([^/]+)\/?$/, params: ["id"] },
   { name: "guide", pattern: /^\/guide\/([^/]+)\/?$/, params: ["id"] },

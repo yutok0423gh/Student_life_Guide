@@ -24,6 +24,15 @@ test("损坏的本地 JSON 会安全回退为空状态", () => {
   const state = createLocalState(backend).read();
   assert.deepEqual(state.favorites, []);
   assert.deepEqual(state.region, { province: "", city: "" });
+  assert.deepEqual(state.school, {
+    code: "",
+    name: "",
+    province: "",
+    city: "",
+    level: "",
+    campus: "",
+    major: "",
+  });
 });
 
 test("收藏使用 guideId 并可切换", () => {
@@ -68,6 +77,40 @@ test("地区可保存在本机且不包含阶段字段", () => {
   const state = storage.read();
   assert.deepEqual(state.region, { province: "广东省", city: "深圳市" });
   assert.equal(Object.prototype.hasOwnProperty.call(state, "stage"), false);
+});
+
+test("学校资料只保存允许的本地字段并清理首尾空格", () => {
+  const backend = new MemoryStorage();
+  const storage = createLocalState(backend);
+  storage.setSchool({
+    code: " 4111010003 ",
+    name: " 清华大学 ",
+    province: " 北京市 ",
+    city: " 北京市 ",
+    level: " 本科 ",
+    campus: " 主校区 ",
+    major: " 计算机科学与技术 ",
+    studentNumber: "never-store-this",
+  });
+  assert.deepEqual(storage.read().school, {
+    code: "4111010003",
+    name: "清华大学",
+    province: "北京市",
+    city: "北京市",
+    level: "本科",
+    campus: "主校区",
+    major: "计算机科学与技术",
+  });
+  assert.equal(Object.prototype.hasOwnProperty.call(storage.read().school, "studentNumber"), false);
+});
+
+test("清空学校名称会移除整张学校资料卡", () => {
+  const backend = new MemoryStorage();
+  const storage = createLocalState(backend);
+  storage.setSchool({ name: "北京大学", code: "4111010001", campus: "燕园校区" });
+  storage.setSchool({ name: "" });
+  assert.equal(storage.read().school.name, "");
+  assert.equal(storage.read().school.campus, "");
 });
 
 test("清除只移除本站命名空间数据", () => {

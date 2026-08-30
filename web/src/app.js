@@ -1,8 +1,15 @@
-import { loadGuides } from "./data.js?app=2026-08-30-26";
-import { getCitiesForProvince, isKnownRegion } from "./regions.js?app=2026-08-30-26";
+import { loadGuides } from "./data.js?app=2026-08-30-29";
+import { getCitiesForProvince, isKnownRegion } from "./regions.js?app=2026-08-30-29";
 import { parseHash, routeHref } from "./router.js";
+import {
+  EMPTY_SCHOOL_CATALOG,
+  findSchoolByCode,
+  findSchoolByName,
+  loadSchoolCatalog,
+  searchSchools,
+} from "./schools.js?app=2026-08-30-29";
 import { createLocalState } from "./storage.js";
-import { renderRoute } from "./views.js?app=2026-08-30-26";
+import { renderRoute } from "./views.js?app=2026-08-30-29";
 
 const app = document.querySelector("#app");
 const main = document.querySelector("#main-content");
@@ -11,6 +18,7 @@ const localState = createLocalState();
 
 let guides = [];
 let rejectedCount = 0;
+let schoolCatalog = EMPTY_SCHOOL_CATALOG;
 let deferredInstallPrompt = null;
 let lastRecordedGuideId = null;
 let toastTimer = null;
@@ -24,7 +32,7 @@ function showToast(message) {
 
 function topLevelRoute(routeName) {
   if (["home", "category", "emergency"].includes(routeName)) return "home";
-  if (["profile", "region", "stage"].includes(routeName)) return "profile";
+  if (["profile", "region", "school", "stage"].includes(routeName)) return "profile";
   if (routeName === "favorites") return "favorites";
   if (routeName === "search") return "search";
   return "";
@@ -51,13 +59,14 @@ function updateDocumentTitle(route) {
   if (route.name === "search") prefix = "搜索";
   if (route.name === "favorites") prefix = "收藏";
   if (route.name === "profile") prefix = "我的";
+  if (route.name === "school") prefix = "我的学校";
   document.title = prefix ? `${prefix} · 初级成年人入门手册` : "初级成年人入门手册";
 }
 
 function render({ focusMain = false } = {}) {
   const route = parseHash(window.location.hash);
   const state = localState.read();
-  app.innerHTML = renderRoute(route, { guides, rejectedCount, localState: state });
+  app.innerHTML = renderRoute(route, { guides, rejectedCount, schoolCatalog, localState: state });
   updateNavigation(route);
   updateInstallButtons();
   updateDocumentTitle(route);
@@ -113,6 +122,87 @@ function updateRegionCityOptions(form) {
   updateRegionSummary(form);
 }
 
+function updateSchoolCard(form) {
+  const name = form.elements.namedItem("schoolName")?.value.trim() ?? "";
+  const campus = form.elements.namedItem("campus")?.value.trim() ?? "";
+  const major = form.elements.namedItem("major")?.value.trim() ?? "";
+  const code = form.elements.namedItem("schoolCode")?.value ?? "";
+  const province = form.elements.namedItem("schoolProvince")?.value ?? "";
+  const city = form.elements.namedItem("schoolCity")?.value ?? "";
+  const level = form.elements.namedItem("schoolLevel")?.value ?? "";
+  const setText = (selector, value) => {
+    const target = form.closest(".page")?.querySelector(selector);
+    if (target) target.textContent = value;
+  };
+
+  setText("[data-school-card-name]", name || "尚未设置学校");
+  setText("[data-school-card-campus]", campus || "未填写");
+  setText("[data-school-card-major]", major || "未填写");
+  setText("[data-school-card-status]", code ? "教育部名单" : name ? "手动填写" : "等待设置");
+  setText(
+    "[data-school-card-meta]",
+    [[province, city].filter(Boolean).join(" / "), level].filter(Boolean).join(" · ") || (name ? "本地手动填写" : "保存后只在此设备显示"),
+  );
+}
+
+function clearOfficialSchoolFields(form) {
+  for (const name of ["schoolCode", "schoolProvince", "schoolCity", "schoolLevel"]) {
+    const field = form.elements.namedItem(name);
+    if (field) field.value = "";
+  }
+}
+
+function closeSchoolResults(input) {
+  const results = input.form?.querySelector("[data-school-results]");
+  if (results) {
+    results.replaceChildren();
+    results.hidden = true;
+  }
+  input.setAttribute("aria-expanded", "false");
+}
+
+function renderSchoolResults(input) {
+  const form = input.form;
+  const results = form?.querySelector("[data-school-results]");
+  const helper = form?.querySelector("[data-school-search-help]");
+  if (!form || !results) return;
+  const query = input.value.trim();
+  results.replaceChildren();
+
+  if (query.length < 2) {
+    results.hidden = true;
+    input.setAttribute("aria-expanded", "false");
+    if (helper) helper.textContent = query ? "再输入一个字开始搜索" : "输入学校名称后，从教育部普通高校名单中选择；找不到时可直接保存手动填写的名称";
+    return;
+  }
+
+  const matches = searchSchools(schoolCatalog, query, localState.read().region, 8);
+  if (!matches.length) {
+    const empty = document.createElement("p");
+    empty.className = "school-search-empty";
+    empty.textContent = "名单中没有匹配项；可以继续保存为手动填写。";
+    results.append(empty);
+  } else {
+    for (const school of matches) {
+      const button = document.createElement("button");
+      const name = document.createElement("strong");
+      const meta = document.createElement("small");
+      button.type = "button";
+      button.className = "school-suggestion";
+      button.dataset.action = "choose-school";
+      button.dataset.schoolCode = school.code;
+      button.setAttribute("role", "option");
+      name.textContent = school.name;
+      meta.textContent = `${school.province} / ${school.city} · ${school.level}${school.isPrivate ? " · 民办" : ""}`;
+      button.append(name, meta);
+      results.append(button);
+    }
+  }
+  results.hidden = false;
+  input.setAttribute("aria-expanded", "true");
+  if (helper) helper.textContent = matches.length ? `找到 ${matches.length} 个最接近的选项` : "未在教育部名单中找到；仍可手动保存";
+}
+
 document.addEventListener("submit", (event) => {
   const form = event.target;
   if (!(form instanceof HTMLFormElement)) return;
@@ -135,7 +225,45 @@ document.addEventListener("submit", (event) => {
     localState.setRegion(province, city);
     render();
     showToast("地区已保存在这台设备");
+    return;
   }
+
+  if (form.matches("[data-school-form]")) {
+    event.preventDefault();
+    const data = new FormData(form);
+    const name = data.get("schoolName")?.toString().trim() ?? "";
+    if (name.length < 2) {
+      showToast("请填写至少两个字的学校名称");
+      form.elements.namedItem("schoolName")?.focus();
+      return;
+    }
+    const selected = findSchoolByCode(schoolCatalog, data.get("schoolCode"));
+    const officialSchool = selected?.name === name ? selected : findSchoolByName(schoolCatalog, name);
+    const saved = localState.setSchool({
+      code: officialSchool?.code ?? "",
+      name,
+      province: officialSchool?.province ?? "",
+      city: officialSchool?.city ?? "",
+      level: officialSchool?.level ?? "",
+      campus: data.get("campus")?.toString() ?? "",
+      major: data.get("major")?.toString() ?? "",
+    });
+    render();
+    showToast(saved.code ? "学校资料已保存在这台设备" : "学校名称已按手动填写保存在本机");
+  }
+});
+
+document.addEventListener("input", (event) => {
+  const input = event.target;
+  if (!(input instanceof HTMLInputElement)) return;
+  if (input.matches("[data-school-query]")) {
+    const selected = findSchoolByCode(schoolCatalog, input.form?.elements.namedItem("schoolCode")?.value);
+    if (!selected || selected.name !== input.value.trim()) clearOfficialSchoolFields(input.form);
+    renderSchoolResults(input);
+    updateSchoolCard(input.form);
+    return;
+  }
+  if (input.matches("[data-school-campus], [data-school-major]")) updateSchoolCard(input.form);
 });
 
 document.addEventListener("change", (event) => {
@@ -171,8 +299,31 @@ document.addEventListener("click", async (event) => {
     showToast(added ? "已加入收藏" : "已取消收藏");
   }
 
+  if (action.dataset.action === "choose-school") {
+    const school = findSchoolByCode(schoolCatalog, action.dataset.schoolCode);
+    const form = action.closest("form");
+    if (!school || !form) return;
+    form.elements.namedItem("schoolName").value = school.name;
+    form.elements.namedItem("schoolCode").value = school.code;
+    form.elements.namedItem("schoolProvince").value = school.province;
+    form.elements.namedItem("schoolCity").value = school.city;
+    form.elements.namedItem("schoolLevel").value = school.level;
+    closeSchoolResults(form.elements.namedItem("schoolName"));
+    const helper = form.querySelector("[data-school-search-help]");
+    if (helper) helper.textContent = `已选择教育部名单中的${school.name}`;
+    updateSchoolCard(form);
+  }
+
+  if (action.dataset.action === "clear-school") {
+    const confirmed = window.confirm("要清除保存在这台设备上的学校、校区和专业吗？");
+    if (!confirmed) return;
+    localState.setSchool({});
+    render();
+    showToast("学校资料已从这台设备清除");
+  }
+
   if (action.dataset.action === "clear-local-data") {
-    const confirmed = window.confirm("要清除本浏览器中的地区、收藏、历史和清单状态吗？此操作无法撤销。");
+    const confirmed = window.confirm("要清除本浏览器中的地区、学校资料、收藏、历史和清单状态吗？此操作无法撤销。");
     if (!confirmed) return;
     localState.clear();
     render();
@@ -223,9 +374,10 @@ async function start() {
     history.replaceState(null, "", `${window.location.pathname}${window.location.search}#/home`);
   }
   updateConnectionStatus();
-  const loaded = await loadGuides();
+  const [loaded, loadedSchoolCatalog] = await Promise.all([loadGuides(), loadSchoolCatalog()]);
   guides = loaded.guides;
   rejectedCount = loaded.rejected.length;
+  schoolCatalog = loadedSchoolCatalog;
   render();
   await registerServiceWorker();
 }

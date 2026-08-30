@@ -2,6 +2,7 @@ import { access, readFile, readdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateGuideCollection } from "../src/data.js";
+import { validateSchoolCatalog } from "../src/schools.js";
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const webRoot = resolve(scriptDirectory, "..");
@@ -14,12 +15,14 @@ const requiredFiles = [
   "manifest.webmanifest",
   "sw.js",
   "content/guides.json",
+  "content/schools.json",
   "icons/icon.svg",
   "icons/maskable.svg",
   "src/app.js",
   "src/data.js",
   "src/router.js",
   "src/regions.js",
+  "src/schools.js",
   "src/search.js",
   "src/storage.js",
   "src/views.js",
@@ -32,6 +35,16 @@ const validation = validateGuideCollection(bundledGuides);
 if (validation.rejected.length) {
   const details = validation.rejected.map((item) => `${item.id}: ${item.errors.join("；")}`).join("\n");
   throw new Error(`网页内容校验失败：\n${details}`);
+}
+
+const schoolCatalog = validateSchoolCatalog(
+  JSON.parse(await readFile(resolve(webRoot, "content", "schools.json"), "utf8")),
+);
+if (schoolCatalog.schools.length !== 2952) {
+  throw new Error(`学校目录数量不正确：期望 2952 所，实际 ${schoolCatalog.schools.length} 所`);
+}
+if (schoolCatalog.updatedAt !== "2026-06-17") {
+  throw new Error("学校目录数据日期不正确");
 }
 
 const sourceFiles = (await readdir(sourceDirectory))
@@ -49,7 +62,7 @@ if (JSON.stringify(sourceGuides) !== JSON.stringify(bundledGuides)) {
 const indexHtml = await readFile(resolve(webRoot, "index.html"), "utf8");
 const styles = await readFile(resolve(webRoot, "styles.css"), "utf8");
 const modules = await Promise.all(
-  ["app.js", "data.js", "regions.js", "router.js", "search.js", "storage.js", "views.js"].map((filename) =>
+  ["app.js", "data.js", "regions.js", "router.js", "schools.js", "search.js", "storage.js", "views.js"].map((filename) =>
     readFile(resolve(webRoot, "src", filename), "utf8"),
   ),
 );
@@ -71,4 +84,4 @@ if (!String(manifest.start_url).startsWith("./") || !String(manifest.scope).star
   throw new Error("PWA 路径必须使用相对地址，才能部署在子目录");
 }
 
-console.log(`检查通过：${validation.validGuides.length} 篇内容、${requiredFiles.length} 个必需文件、无远程运行时资源。`);
+console.log(`检查通过：${validation.validGuides.length} 篇内容、${schoolCatalog.schools.length} 所学校、${requiredFiles.length} 个必需文件、无远程运行时资源。`);

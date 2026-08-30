@@ -5,6 +5,7 @@ const DEFAULT_STATE = Object.freeze({
   history: [],
   checklist: [],
   region: { province: "", city: "" },
+  school: { code: "", name: "", province: "", city: "", level: "", campus: "", major: "" },
 });
 
 function freshState() {
@@ -13,11 +14,16 @@ function freshState() {
     history: [],
     checklist: [],
     region: { province: "", city: "" },
+    school: { code: "", name: "", province: "", city: "", level: "", campus: "", major: "" },
   };
 }
 
 function isString(value) {
   return typeof value === "string";
+}
+
+function cleanString(value, maxLength = 100) {
+  return isString(value) ? value.trim().slice(0, maxLength) : "";
 }
 
 function sanitizeState(value) {
@@ -48,6 +54,20 @@ function sanitizeState(value) {
       province: isString(value.region.province) ? value.region.province : "",
       city: isString(value.region.city) ? value.region.city : "",
     };
+  }
+  if (value.school && typeof value.school === "object" && !Array.isArray(value.school)) {
+    const name = cleanString(value.school.name, 100);
+    state.school = name
+      ? {
+          code: cleanString(value.school.code, 20),
+          name,
+          province: cleanString(value.school.province, 40),
+          city: cleanString(value.school.city, 40),
+          level: cleanString(value.school.level, 20),
+          campus: cleanString(value.school.campus, 80),
+          major: cleanString(value.school.major, 80),
+        }
+      : freshState().school;
   }
   return state;
 }
@@ -105,6 +125,13 @@ export function createLocalState(storage = globalThis.localStorage, now = () => 
     return state.region;
   }
 
+  function setSchool(school) {
+    const state = read();
+    state.school = school && typeof school === "object" ? school : freshState().school;
+    write(state);
+    return read().school;
+  }
+
   function clear() {
     try {
       storage?.removeItem(STORAGE_KEY);
@@ -114,7 +141,7 @@ export function createLocalState(storage = globalThis.localStorage, now = () => 
     }
   }
 
-  return { read, write, toggleFavorite, recordHistory, setChecklist, setRegion, clear };
+  return { read, write, toggleFavorite, recordHistory, setChecklist, setRegion, setSchool, clear };
 }
 
 export { DEFAULT_STATE };

@@ -1,10 +1,10 @@
-import { CATEGORIES, getCategory } from "./data.js?app=2026-08-30-26";
+import { CATEGORIES, getCategory } from "./data.js?app=2026-08-30-29";
 import {
   PROVINCE_OPTIONS,
   REGION_DATA_SOURCE,
   REGION_DATA_UPDATED_AT,
   getCitiesForProvince,
-} from "./regions.js?app=2026-08-30-26";
+} from "./regions.js?app=2026-08-30-29";
 import { routeHref } from "./router.js";
 import { searchGuides } from "./search.js";
 
@@ -57,6 +57,11 @@ function userRegionLabel(region) {
   if (region.city) return `${region.province || "未填写省份"} / ${region.city}`;
   if (region.province) return region.province;
   return "尚未设置地区";
+}
+
+function schoolProfileLabel(school) {
+  if (!school?.name) return "尚未设置";
+  return school.campus ? `${school.name} · ${school.campus}` : school.name;
 }
 
 function contentFootnote(rejectedCount) {
@@ -445,6 +450,79 @@ function regionView(context) {
   </section>`;
 }
 
+function schoolView(context) {
+  const school = context.localState.school;
+  const catalog = context.schoolCatalog;
+  const hasSchool = Boolean(school.name);
+  const locationLabel = [school.province, school.city].filter(Boolean).join(" / ");
+  const detailLabel = [locationLabel, school.level].filter(Boolean).join(" · ");
+  const sourceUrl = catalog.sourceUrl || "https://www.moe.gov.cn/jyb_xxgk/s5743/s5744/202606/t20260618_1441074.html";
+
+  return `<section class="page">
+    <a class="back-link" href="#/profile">← 返回“我的”</a>
+    ${pageHeading("LOCAL SCHOOL", "把学校资料留在这台设备", "用于整理校园生活相关内容；不是学校账号认证，也不会上传。")}
+
+    <article class="school-profile-card" aria-live="polite">
+      <div class="school-card-topline"><span>校园资料卡</span><strong>仅本机</strong></div>
+      <div class="school-card-name" data-school-card-name>${escapeHtml(school.name || "尚未设置学校")}</div>
+      <dl>
+        <div><dt>校区</dt><dd data-school-card-campus>${escapeHtml(school.campus || "未填写")}</dd></div>
+        <div><dt>专业</dt><dd data-school-card-major>${escapeHtml(school.major || "未填写")}</dd></div>
+        <div><dt>名单</dt><dd data-school-card-status>${school.code ? "教育部名单" : hasSchool ? "手动填写" : "等待设置"}</dd></div>
+      </dl>
+      <p data-school-card-meta>${escapeHtml(detailLabel || (hasSchool ? "本地手动填写" : "保存后只在此设备显示"))}</p>
+    </article>
+
+    <form class="form-stack school-form" data-school-form novalidate>
+      <label class="field">
+        <span class="field-heading"><span>学校名称</span><small>必填</small></span>
+        <span class="school-combobox">
+          <input
+            type="search"
+            name="schoolName"
+            value="${escapeHtml(school.name)}"
+            placeholder="输入至少两个字，例如：清华大学"
+            maxlength="100"
+            autocomplete="off"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-controls="school-search-results"
+            data-school-query
+          />
+          <input type="hidden" name="schoolCode" value="${escapeHtml(school.code)}" />
+          <input type="hidden" name="schoolProvince" value="${escapeHtml(school.province)}" />
+          <input type="hidden" name="schoolCity" value="${escapeHtml(school.city)}" />
+          <input type="hidden" name="schoolLevel" value="${escapeHtml(school.level)}" />
+          <span class="school-search-mark" aria-hidden="true">⌕</span>
+        </span>
+        <div id="school-search-results" class="school-search-results" role="listbox" data-school-results hidden></div>
+        <small data-school-search-help>输入学校名称后，从教育部普通高校名单中选择；找不到时可直接保存手动填写的名称</small>
+      </label>
+
+      <label class="field">
+        <span class="field-heading"><span>校区</span><small>可选</small></span>
+        <input name="campus" value="${escapeHtml(school.campus)}" placeholder="例如：大学城校区" maxlength="80" autocomplete="off" data-school-campus />
+        <small>同一学校有多个校区时再填写</small>
+      </label>
+
+      <label class="field">
+        <span class="field-heading"><span>专业</span><small>可选</small></span>
+        <input name="major" value="${escapeHtml(school.major)}" placeholder="例如：计算机科学与技术" maxlength="80" autocomplete="off" data-school-major />
+        <small>只用于未来整理专业相关办事内容</small>
+      </label>
+
+      <div class="school-form-actions">
+        <button class="primary-button" type="submit">保存在这台设备</button>
+        ${hasSchool ? '<button class="text-action school-clear-action" type="button" data-action="clear-school">清除学校资料</button>' : ""}
+      </div>
+      <p class="region-data-note">学校选项：<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(catalog.sourceName || "中华人民共和国教育部")}《${escapeHtml(catalog.sourceTitle || "全国高等学校名单")}》</a> · ${catalog.schools.length ? `${catalog.schools.length} 所` : "名单暂不可用，可手动填写"} · 截至 ${escapeHtml(catalog.updatedAt || "2026-06-17")}</p>
+    </form>
+
+    <div class="privacy-box"><strong>“本地绑定”是什么意思？</strong><p>这里保存的是你自己填写的学校资料，不会连接学校系统，也不代表已经完成学生身份认证。不要填写学号、学校密码或身份证信息。</p></div>
+  </section>`;
+}
+
 function stageView(context) {
   return `<section class="page">
     <a class="back-link" href="#/profile">← 返回“我的”</a>
@@ -462,6 +540,7 @@ function profileView(context) {
     ${pageHeading("LOCAL PROFILE", "我的", "无需注册。所有个性化数据都留在当前浏览器。")}
     <ul class="settings-list">
       <li><a href="#/region"><span><strong>所在地区</strong><br /><small>${escapeHtml(userRegionLabel(context.localState.region))}</small></span><span aria-hidden="true">→</span></a></li>
+      <li><a href="#/school"><span><strong>我的学校</strong><br /><small>${escapeHtml(schoolProfileLabel(context.localState.school))}</small></span><span aria-hidden="true">→</span></a></li>
       <li><a href="#/stage"><span><strong>目前阶段</strong><br /><small>等待正式标识确认</small></span><span aria-hidden="true">→</span></a></li>
       <li><a href="#/favorites"><span><strong>收藏</strong><br /><small>${favoriteCount} 篇</small></span><span aria-hidden="true">→</span></a></li>
       <li class="settings-row"><span><strong>最近阅读</strong><br /><small>${historyCount} 篇，最多保留 50 条</small></span><span>本地</span></li>
@@ -478,7 +557,7 @@ function profileView(context) {
       <div class="section-heading"><h2>隐私</h2><small>无账号 · 无追踪</small></div>
       <div class="privacy-box">
         <p>网页版不设置后端登录，不接入广告或第三方统计，不收集姓名、证件号、手机号、银行卡资料、学校账号或精确位置。</p>
-        <p>地区、收藏、历史和清单状态保存在浏览器本地存储中。清除本站数据或更换浏览器后，这些记录会消失。</p>
+        <p>地区、学校资料、收藏、历史和清单状态保存在浏览器本地存储中。清除本站数据或更换浏览器后，这些记录会消失。</p>
         <button class="danger-button" type="button" data-action="clear-local-data">清除本机记录</button>
       </div>
     </section>
@@ -512,6 +591,8 @@ export function renderRoute(route, context) {
       return emergencyView(context);
     case "region":
       return regionView(context);
+    case "school":
+      return schoolView(context);
     case "stage":
       return stageView(context);
     default:
