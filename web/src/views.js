@@ -1,4 +1,10 @@
-import { CATEGORIES, getCategory } from "./data.js?app=2026-08-30-25";
+import { CATEGORIES, getCategory } from "./data.js?app=2026-08-30-26";
+import {
+  PROVINCE_OPTIONS,
+  REGION_DATA_SOURCE,
+  REGION_DATA_UPDATED_AT,
+  getCitiesForProvince,
+} from "./regions.js?app=2026-08-30-26";
 import { routeHref } from "./router.js";
 import { searchGuides } from "./search.js";
 
@@ -385,15 +391,57 @@ function emergencyView(context) {
 
 function regionView(context) {
   const { province, city } = context.localState.region;
+  const selectedProvince = PROVINCE_OPTIONS.includes(province) ? province : "";
+  const cities = getCitiesForProvince(selectedProvince);
+  const selectedCity = cities.includes(city) ? city : "";
+  const hasUnsupportedSavedRegion = Boolean(province || city) && (!selectedProvince || (city && !selectedCity));
+  const selectionLabel = selectedCity
+    ? `${selectedProvince} / ${selectedCity}`
+    : selectedProvince || "尚未选择";
+  const provinceOptions = PROVINCE_OPTIONS.map(
+    (item) =>
+      `<option value="${escapeHtml(item)}" ${item === selectedProvince ? "selected" : ""}>${escapeHtml(item)}</option>`,
+  ).join("");
+  const cityOptions = cities
+    .map(
+      (item) =>
+        `<option value="${escapeHtml(item)}" ${item === selectedCity ? "selected" : ""}>${escapeHtml(item)}</option>`,
+    )
+    .join("");
+
   return `<section class="page">
     <a class="back-link" href="#/profile">← 返回“我的”</a>
     ${pageHeading("REGION", "你主要生活在哪里？", "地区只用于筛选适用政策；不会申请定位权限，也不会上传。")}
     <form class="form-stack" data-region-form>
-      <label class="field"><span>省份</span><input name="province" value="${escapeHtml(province)}" placeholder="例如：广东省" autocomplete="address-level1" /><small>可以留空，稍后再设置</small></label>
-      <label class="field"><span>城市</span><input name="city" value="${escapeHtml(city)}" placeholder="例如：深圳市" autocomplete="address-level2" /><small>城市可选；请使用你熟悉的正式名称</small></label>
+      <label class="field">
+        <span class="field-heading"><span>省级地区</span><small aria-hidden="true">01</small></span>
+        <span class="select-shell">
+          <select name="province" autocomplete="address-level1" data-region-province aria-describedby="province-help">
+            <option value="">暂不选择省级地区</option>
+            ${provinceOptions}
+          </select>
+        </span>
+        <small id="province-help">覆盖中国大陆 31 个省级地区；可以留空</small>
+      </label>
+      <label class="field">
+        <span class="field-heading"><span>城市 / 地级行政区</span><small aria-hidden="true">02</small></span>
+        <span class="select-shell">
+          <select name="city" autocomplete="address-level2" data-region-city aria-describedby="city-help" ${selectedProvince ? "" : "disabled"}>
+            <option value="">${selectedProvince ? "暂不选择城市 / 地区" : "请先选择省级地区"}</option>
+            ${cityOptions}
+          </select>
+        </span>
+        <small id="city-help" data-region-city-help>${selectedProvince ? `只显示${escapeHtml(selectedProvince)}下的选项；城市可不选` : "选择省级地区后，这里会显示对应选项"}</small>
+      </label>
+      <div class="region-selection-summary" aria-live="polite">
+        <span>当前选择</span>
+        <strong data-region-summary-value>${escapeHtml(selectionLabel)}</strong>
+      </div>
+      ${hasUnsupportedSavedRegion ? '<div class="notice">之前保存的地区不在当前选项中，请重新选择后保存。</div>' : ""}
       <div><button class="primary-button" type="submit">保存在这台设备</button></div>
+      <p class="region-data-note">选项来源：<a href="${escapeHtml(REGION_DATA_SOURCE)}" target="_blank" rel="noopener noreferrer">中国·国家地名信息库</a> · 数据截至 ${escapeHtml(REGION_DATA_UPDATED_AT)}</p>
     </form>
-    <div class="privacy-box"><strong>为什么不用自动定位？</strong><p>这个产品不需要精确 GPS。手动填写足以判断省、市级内容，而且更容易理解与删除。</p></div>
+    <div class="privacy-box"><strong>为什么不用自动定位？</strong><p>这个产品不需要精确 GPS。手动选择足以判断省、市级内容，而且更容易理解与删除。</p></div>
   </section>`;
 }
 

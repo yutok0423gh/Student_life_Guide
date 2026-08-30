@@ -6,7 +6,7 @@
   "scripts": {
     "sync-content": "node scripts/sync-content.mjs",
     "check": "node scripts/check.mjs",
-    "test": "node --test --test-isolation=none tests/validation.test.mjs tests/search.test.mjs tests/storage.test.mjs tests/router.test.mjs",
+    "test": "node --test --test-isolation=none tests/validation.test.mjs tests/search.test.mjs tests/storage.test.mjs tests/router.test.mjs tests/regions.test.mjs",
     "build": "npm run sync-content && npm run check && node scripts/build.mjs",
     "dev": "npm run sync-content && node scripts/dev-server.mjs"
   }

@@ -19,6 +19,7 @@ const requiredFiles = [
   "src/app.js",
   "src/data.js",
   "src/router.js",
+  "src/regions.js",
   "src/search.js",
   "src/storage.js",
   "src/views.js",
@@ -48,7 +49,7 @@ if (JSON.stringify(sourceGuides) !== JSON.stringify(bundledGuides)) {
 const indexHtml = await readFile(resolve(webRoot, "index.html"), "utf8");
 const styles = await readFile(resolve(webRoot, "styles.css"), "utf8");
 const modules = await Promise.all(
-  ["app.js", "data.js", "router.js", "search.js", "storage.js", "views.js"].map((filename) =>
+  ["app.js", "data.js", "regions.js", "router.js", "search.js", "storage.js", "views.js"].map((filename) =>
     readFile(resolve(webRoot, "src", filename), "utf8"),
   ),
 );

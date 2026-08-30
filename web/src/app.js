@@ -1,7 +1,8 @@
-import { loadGuides } from "./data.js?app=2026-08-30-25";
+import { loadGuides } from "./data.js?app=2026-08-30-26";
+import { getCitiesForProvince, isKnownRegion } from "./regions.js?app=2026-08-30-26";
 import { parseHash, routeHref } from "./router.js";
 import { createLocalState } from "./storage.js";
-import { renderRoute } from "./views.js?app=2026-08-30-25";
+import { renderRoute } from "./views.js?app=2026-08-30-26";
 
 const app = document.querySelector("#app");
 const main = document.querySelector("#main-content");
@@ -81,6 +82,37 @@ function navigateToSearch(form) {
   window.location.hash = routeHref("/search", { q: query }).slice(1);
 }
 
+function updateRegionSummary(form) {
+  const province = form.elements.namedItem("province")?.value ?? "";
+  const city = form.elements.namedItem("city")?.value ?? "";
+  const summary = form.querySelector("[data-region-summary-value]");
+  if (summary) summary.textContent = city ? `${province} / ${city}` : province || "尚未选择";
+}
+
+function updateRegionCityOptions(form) {
+  const provinceSelect = form.elements.namedItem("province");
+  const citySelect = form.elements.namedItem("city");
+  if (!(provinceSelect instanceof HTMLSelectElement) || !(citySelect instanceof HTMLSelectElement)) return;
+
+  const previousCity = citySelect.value;
+  const province = provinceSelect.value;
+  const cities = getCitiesForProvince(province);
+  const placeholder = new Option(province ? "暂不选择城市 / 地区" : "请先选择省级地区", "");
+  const options = cities.map((city) => new Option(city, city));
+
+  citySelect.replaceChildren(placeholder, ...options);
+  citySelect.disabled = !province;
+  if (cities.includes(previousCity)) citySelect.value = previousCity;
+
+  const helper = form.querySelector("[data-region-city-help]");
+  if (helper) {
+    helper.textContent = province
+      ? `只显示${province}下的选项；城市可不选`
+      : "选择省级地区后，这里会显示对应选项";
+  }
+  updateRegionSummary(form);
+}
+
 document.addEventListener("submit", (event) => {
   const form = event.target;
   if (!(form instanceof HTMLFormElement)) return;
@@ -94,7 +126,13 @@ document.addEventListener("submit", (event) => {
   if (form.matches("[data-region-form]")) {
     event.preventDefault();
     const data = new FormData(form);
-    localState.setRegion(data.get("province"), data.get("city"));
+    const province = data.get("province")?.toString() ?? "";
+    const city = data.get("city")?.toString() ?? "";
+    if (!isKnownRegion(province, city)) {
+      showToast("请选择列表中的地区");
+      return;
+    }
+    localState.setRegion(province, city);
     render();
     showToast("地区已保存在这台设备");
   }
@@ -102,6 +140,14 @@ document.addEventListener("submit", (event) => {
 
 document.addEventListener("change", (event) => {
   const input = event.target;
+  if (input instanceof HTMLSelectElement && input.matches("[data-region-province]")) {
+    if (input.form) updateRegionCityOptions(input.form);
+    return;
+  }
+  if (input instanceof HTMLSelectElement && input.matches("[data-region-city]")) {
+    if (input.form) updateRegionSummary(input.form);
+    return;
+  }
   if (!(input instanceof HTMLInputElement) || !input.matches("[data-checklist]")) return;
   localState.setChecklist(input.dataset.guideId, input.dataset.checklistId, input.checked);
   showToast(input.checked ? "已标记完成" : "已取消完成");

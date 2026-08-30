@@ -926,21 +926,117 @@ h3 {
   gap: 7px;
 }
 
-.field span {
-  font-weight: 750;
+.field-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
-.field input {
-  min-height: 48px;
-  padding: 0 13px;
+.field-heading > span {
+  font-weight: 800;
+}
+
+.field-heading > small {
+  min-width: 30px;
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--blue);
+  background: var(--blue-soft);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.field input,
+.field select {
+  min-height: 52px;
   border: 1px solid var(--line);
   border-radius: var(--radius-small);
   color: var(--ink);
   background: var(--paper-raised);
+  font: inherit;
+}
+
+.field input {
+  padding: 0 13px;
+}
+
+.select-shell {
+  position: relative;
+  display: block;
+}
+
+.select-shell::after {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  color: var(--blue);
+  font-size: 1.15rem;
+  font-weight: 900;
+  line-height: 1;
+  pointer-events: none;
+  transform: translateY(-56%);
+  content: "⌄";
+}
+
+.select-shell:focus-within select {
+  border-color: var(--blue);
+}
+
+.field select {
+  width: 100%;
+  padding: 0 48px 0 14px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.field select:disabled {
+  color: var(--ink-soft);
+  background: var(--paper-deep);
+  cursor: not-allowed;
+  opacity: 0.78;
 }
 
 .field small {
   color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.region-selection-summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  min-height: 58px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--blue);
+  background: var(--blue-soft);
+}
+
+.region-selection-summary span {
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.region-selection-summary strong {
+  overflow-wrap: anywhere;
+}
+
+.region-data-note {
+  margin: -2px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
+.region-data-note a {
+  color: var(--blue);
 }
 
 .settings-list {
