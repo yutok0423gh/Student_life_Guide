@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "adult-guide-web";
-const CACHE_NAME = `${CACHE_PREFIX}-v6`;
+const CACHE_NAME = `${CACHE_PREFIX}-v7`;
 const BASE_URL = new URL("./", self.location.href);
 const INDEX_URL = new URL("./index.html", BASE_URL).href;
 const SHELL_URLS = [
@@ -11,14 +11,14 @@ const SHELL_URLS = [
   "./icons/maskable.svg",
   "./content/guides.json?content=2026-08-30-25",
   "./content/schools.json?catalog=2026-06-17",
-  "./src/app.js?app=2026-08-30-29",
-  "./src/data.js?app=2026-08-30-29",
-  "./src/regions.js?app=2026-08-30-29",
+  "./src/app.js?app=2026-08-30-30",
+  "./src/data.js?app=2026-08-30-30",
+  "./src/regions.js?app=2026-08-30-30",
   "./src/router.js",
-  "./src/schools.js?app=2026-08-30-29",
+  "./src/schools.js?app=2026-08-30-30",
   "./src/search.js",
   "./src/storage.js",
-  "./src/views.js?app=2026-08-30-29",
+  "./src/views.js?app=2026-08-30-30",
 ].map((path) => new URL(path, BASE_URL).href);
 
 self.addEventListener("install", (event) => {

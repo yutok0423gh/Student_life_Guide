@@ -1,10 +1,10 @@
-import { CATEGORIES, getCategory } from "./data.js?app=2026-08-30-29";
+import { CATEGORIES, getCategory } from "./data.js?app=2026-08-30-30";
 import {
   PROVINCE_OPTIONS,
   REGION_DATA_SOURCE,
   REGION_DATA_UPDATED_AT,
   getCitiesForProvince,
-} from "./regions.js?app=2026-08-30-29";
+} from "./regions.js?app=2026-08-30-30";
 import { routeHref } from "./router.js";
 import { searchGuides } from "./search.js";
 
@@ -156,14 +156,6 @@ function homeView(context) {
           (scenario) =>
             `<a class="scenario-chip" href="${routeHref("/search", { q: scenario })}">${escapeHtml(scenario)}</a>`,
         ).join("")}
-      </div>
-    </section>
-
-    <section class="section-block" aria-labelledby="stage-title">
-      <div class="section-heading"><h2 id="stage-title">根据你的阶段</h2><small>可跳过</small></div>
-      <div class="stage-card">
-        <div><h3>目前阶段尚未设置</h3><p>阶段只用于本地排序；正式数据标识确认后才会开放保存。</p></div>
-        <a class="secondary-button" href="#/stage">查看阶段说明</a>
       </div>
     </section>
 

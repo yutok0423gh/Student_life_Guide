@@ -1,5 +1,5 @@
-import { loadGuides } from "./data.js?app=2026-08-30-29";
-import { getCitiesForProvince, isKnownRegion } from "./regions.js?app=2026-08-30-29";
+import { loadGuides } from "./data.js?app=2026-08-30-30";
+import { getCitiesForProvince, isKnownRegion } from "./regions.js?app=2026-08-30-30";
 import { parseHash, routeHref } from "./router.js";
 import {
   EMPTY_SCHOOL_CATALOG,
@@ -7,9 +7,9 @@ import {
   findSchoolByName,
   loadSchoolCatalog,
   searchSchools,
-} from "./schools.js?app=2026-08-30-29";
+} from "./schools.js?app=2026-08-30-30";
 import { createLocalState } from "./storage.js";
-import { renderRoute } from "./views.js?app=2026-08-30-29";
+import { renderRoute } from "./views.js?app=2026-08-30-30";
 
 const app = document.querySelector("#app");
 const main = document.querySelector("#main-content");
