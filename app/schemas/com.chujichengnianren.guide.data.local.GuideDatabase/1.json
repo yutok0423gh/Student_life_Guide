@@ -1,0 +1,462 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "e98097ac3b6497b72b8a079ad7b54c5c",
+    "entities": [
+      {
+        "tableName": "guides",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `summary` TEXT NOT NULL, `category_id` TEXT NOT NULL, `scenario_ids` TEXT NOT NULL, `keywords` TEXT NOT NULL, `aliases` TEXT NOT NULL, `region_level` TEXT NOT NULL, `region_province` TEXT, `region_city` TEXT, `quick_answer` TEXT NOT NULL, `verified_at` TEXT NOT NULL, `content_version` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "summary",
+            "columnName": "summary",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "categoryId",
+            "columnName": "category_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scenarioIds",
+            "columnName": "scenario_ids",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "keywords",
+            "columnName": "keywords",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "aliases",
+            "columnName": "aliases",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "regionLevel",
+            "columnName": "region_level",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "regionProvince",
+            "columnName": "region_province",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "regionCity",
+            "columnName": "region_city",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "quickAnswer",
+            "columnName": "quick_answer",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "verifiedAt",
+            "columnName": "verified_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contentVersion",
+            "columnName": "content_version",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_guides_category_id",
+            "unique": false,
+            "columnNames": [
+              "category_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_guides_category_id` ON `${TABLE_NAME}` (`category_id`)"
+          },
+          {
+            "name": "index_guides_region_level",
+            "unique": false,
+            "columnNames": [
+              "region_level"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_guides_region_level` ON `${TABLE_NAME}` (`region_level`)"
+          }
+        ]
+      },
+      {
+        "tableName": "guide_steps",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`guide_id` TEXT NOT NULL, `id` TEXT NOT NULL, `step_order` INTEGER NOT NULL, `title` TEXT NOT NULL, `description` TEXT NOT NULL, PRIMARY KEY(`guide_id`, `id`), FOREIGN KEY(`guide_id`) REFERENCES `guides`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "guideId",
+            "columnName": "guide_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "order",
+            "columnName": "step_order",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "guide_id",
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_guide_steps_guide_id",
+            "unique": false,
+            "columnNames": [
+              "guide_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_guide_steps_guide_id` ON `${TABLE_NAME}` (`guide_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "guides",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "guide_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "checklist_definitions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`guide_id` TEXT NOT NULL, `id` TEXT NOT NULL, `text` TEXT NOT NULL, `required` INTEGER NOT NULL, PRIMARY KEY(`guide_id`, `id`), FOREIGN KEY(`guide_id`) REFERENCES `guides`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "guideId",
+            "columnName": "guide_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "text",
+            "columnName": "text",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "required",
+            "columnName": "required",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "guide_id",
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_checklist_definitions_guide_id",
+            "unique": false,
+            "columnNames": [
+              "guide_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_checklist_definitions_guide_id` ON `${TABLE_NAME}` (`guide_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "guides",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "guide_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "official_sources",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`guide_id` TEXT NOT NULL, `id` TEXT NOT NULL, `source_name` TEXT NOT NULL, `source_title` TEXT NOT NULL, `source_url` TEXT NOT NULL, `source_level` TEXT NOT NULL, `published_at` TEXT, `verified_at` TEXT NOT NULL, PRIMARY KEY(`guide_id`, `id`), FOREIGN KEY(`guide_id`) REFERENCES `guides`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "guideId",
+            "columnName": "guide_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceName",
+            "columnName": "source_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceTitle",
+            "columnName": "source_title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceUrl",
+            "columnName": "source_url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceLevel",
+            "columnName": "source_level",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "publishedAt",
+            "columnName": "published_at",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "verifiedAt",
+            "columnName": "verified_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "guide_id",
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_official_sources_guide_id",
+            "unique": false,
+            "columnNames": [
+              "guide_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_official_sources_guide_id` ON `${TABLE_NAME}` (`guide_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "guides",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "guide_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "favorites",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`guide_id` TEXT NOT NULL, `favorited_at` INTEGER NOT NULL, PRIMARY KEY(`guide_id`), FOREIGN KEY(`guide_id`) REFERENCES `guides`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "guideId",
+            "columnName": "guide_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "favoritedAt",
+            "columnName": "favorited_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "guide_id"
+          ]
+        },
+        "foreignKeys": [
+          {
+            "table": "guides",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "guide_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "checklist_states",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`guide_id` TEXT NOT NULL, `checklist_item_id` TEXT NOT NULL, `is_checked` INTEGER NOT NULL, PRIMARY KEY(`guide_id`, `checklist_item_id`), FOREIGN KEY(`guide_id`) REFERENCES `guides`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "guideId",
+            "columnName": "guide_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "checklistItemId",
+            "columnName": "checklist_item_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isChecked",
+            "columnName": "is_checked",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "guide_id",
+            "checklist_item_id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_checklist_states_guide_id",
+            "unique": false,
+            "columnNames": [
+              "guide_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_checklist_states_guide_id` ON `${TABLE_NAME}` (`guide_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "guides",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "guide_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "reading_history",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`guide_id` TEXT NOT NULL, `last_opened_at` INTEGER NOT NULL, PRIMARY KEY(`guide_id`), FOREIGN KEY(`guide_id`) REFERENCES `guides`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "guideId",
+            "columnName": "guide_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastOpenedAt",
+            "columnName": "last_opened_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "guide_id"
+          ]
+        },
+        "foreignKeys": [
+          {
+            "table": "guides",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "guide_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e98097ac3b6497b72b8a079ad7b54c5c')"
+    ]
+  }
+}

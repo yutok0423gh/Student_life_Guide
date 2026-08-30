@@ -1,0 +1,99 @@
+{
+  "id": "guide_telecom_fraud",
+  "title": "被电信诈骗了怎么办？",
+  "summary": "立即停止操作，联系支付机构并报警，完整保存账户、沟通和转账证据。",
+  "categoryId": "safety",
+  "scenarioIds": [],
+  "keywords": [
+    "电信诈骗",
+    "网络诈骗",
+    "报警",
+    "转账",
+    "止付"
+  ],
+  "aliases": [
+    "被骗钱了",
+    "刷单被骗",
+    "冒充客服诈骗"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "立刻停止继续转账、共享屏幕和提供验证码，尽快联系银行或支付平台说明涉诈交易并按正式流程处置，同时拨打110或到公安机关报案。保存聊天、电话、网页、应用、订单、账户和转账流水；不要再向所谓追款人员支付保证金或解冻费。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "立即切断诈骗操作",
+      "description": "停止转账、贷款、共享屏幕、远程控制和验证码提供，退出可疑群聊但不要删除记录。正在面临人身威胁时先到安全地点并报警。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "联系银行或支付平台",
+      "description": "通过卡面、官方应用或官网核实的客服电话说明交易时间、金额和收款账户，询问挂失、止付、账户保护和争议处理。是否能拦截或返还取决于资金状态，应越快越好。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "尽快向公安机关报案",
+      "description": "拨打110或前往公安机关，如实说明诈骗经过、损失金额、付款渠道和对方身份线索，按要求提交证据并保存接报案或受理信息。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "完整备份证据和时间线",
+      "description": "保存聊天与通话、短信、网址、应用名称和下载来源、对方账号、订单、二维码、转账流水、快递资料及设备异常，按时间顺序整理，不擅自篡改截图。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "保护账号并防二次诈骗",
+      "description": "在可信设备上修改被泄露账户密码，检查支付和登录设备，联系运营商或平台处理被盗账号。任何声称能内部追回但先收钱的人都需警惕，所有进度只通过公安、银行或平台正式渠道核实。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_transactions",
+      "text": "银行卡、支付平台或虚拟账户的完整交易流水",
+      "required": true
+    },
+    {
+      "id": "check_communications",
+      "text": "聊天、通话、短信、邮件和群聊记录",
+      "required": true
+    },
+    {
+      "id": "check_accounts",
+      "text": "对方姓名、账号、电话、网址、二维码等线索",
+      "required": true
+    },
+    {
+      "id": "check_bank_report",
+      "text": "银行或支付平台的工单和处置记录",
+      "required": true
+    },
+    {
+      "id": "check_police_report",
+      "text": "报警经过和公安机关提供的接报案信息",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "全国人民代表大会常务委员会",
+      "sourceTitle": "中华人民共和国反电信网络诈骗法",
+      "sourceUrl": "https://www.npc.gov.cn/c2/c30834/202209/t20220902_319186.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2022-09-02",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

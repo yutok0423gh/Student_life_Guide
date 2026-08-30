@@ -1,0 +1,108 @@
+{
+  "id": "guide_internship_unpaid",
+  "title": "实习不发工资怎么办？",
+  "summary": "先判断实习性质与既有约定，再按学校、民事或劳动争议路径处理。",
+  "categoryId": "career",
+  "scenarioIds": [],
+  "keywords": [
+    "实习工资",
+    "实习报酬",
+    "拖欠报酬",
+    "劳动关系",
+    "实习维权"
+  ],
+  "aliases": [
+    "实习不给钱",
+    "实习工资没发",
+    "实习生欠薪"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先保存协议、招聘信息、考勤、工作成果和报酬承诺，再判断是学校教学实习、一般民事实习，还是名为实习但实际可能形成劳动关系。一般实习报酬先看约定；普通本科高校组织的跟岗、顶岗实习有专门保障；若实际构成劳动关系，则按工资和劳动争议规则处理。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "固定工作和报酬证据",
+      "description": "保存实习协议、录用或招聘信息、聊天邮件、考勤、排班、任务指令、工作成果、付款记录和单位主体信息，整理应付金额及约定发放日。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "判断实习属于哪种情形",
+      "description": "学校社会实践通常不当然构成劳动关系；但持续提供劳动、接受单位劳动管理并取得报酬，尤其以就业为目的时，可能要按具体事实判断是否形成劳动关系，不能只看协议标题。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "核对适用的报酬依据",
+      "description": "一般实习有无报酬及标准主要看双方约定。对普通本科高校组织的跟岗、顶岗实习，教育部要求保障合理报酬，原则上不低于相同岗位试用期工资标准的80%；不要把这一标准机械套用到所有实习。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "书面催付并同步学校",
+      "description": "向协议相对方列明工作期间、约定、应付金额和付款期限。属于学校管理的实习时，同步联系指导教师、学院或教务部门，要求按学校与单位协议处理。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "选择对应争议渠道",
+      "description": "一般民事实习争议可按协议协商、调解、仲裁约定或民事诉讼处理；主张已形成劳动关系和拖欠工资的，可向用工所在地人社部门咨询，并依法申请劳动争议仲裁。事实复杂时先获得法律帮助。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_agreement",
+      "text": "实习协议、学校安排或其他书面约定",
+      "required": true
+    },
+    {
+      "id": "check_pay_promise",
+      "text": "报酬金额、算法和发放日期证据",
+      "required": true
+    },
+    {
+      "id": "check_work_evidence",
+      "text": "考勤、排班、指令、成果和管理记录",
+      "required": true
+    },
+    {
+      "id": "check_company",
+      "text": "实习单位完整主体和联系信息",
+      "required": true
+    },
+    {
+      "id": "check_demand",
+      "text": "书面催付及单位、学校回复记录",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中华人民共和国司法部智慧普法平台",
+      "sourceTitle": "写给毕业生的劳动法律知识十问十答",
+      "sourceUrl": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxrdtj/202408/t20240811_504067.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2024-08-11",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "中华人民共和国教育部",
+      "sourceTitle": "教育部关于加强和规范普通本科高校实习管理工作的意见",
+      "sourceUrl": "https://www.moe.gov.cn/srcsite/A08/s7056/201907/t20190724_392130.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2019-07-24",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

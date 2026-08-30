@@ -1,0 +1,103 @@
+{
+  "id": "guide_phone_lost",
+  "title": "手机丢了怎么办？",
+  "summary": "先保护电话卡、支付和账号，再尝试定位设备并处理被盗风险。",
+  "categoryId": "documents",
+  "scenarioIds": [],
+  "keywords": [
+    "手机",
+    "丢失",
+    "电话卡",
+    "SIM卡",
+    "账号安全"
+  ],
+  "aliases": [
+    "手机找不到了",
+    "手机被偷了",
+    "手机卡挂失"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "借一部可信设备，先通过运营商官方渠道暂停或挂失电话卡，再保护支付和重要账号；使用手机厂商的官方查找功能定位或锁定设备。怀疑被盗时，在安全地点报警并保留设备信息。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "先停用丢失的电话卡",
+      "description": "从运营商官网、官方客服电话或营业厅办理停机、挂失或补卡咨询，防止短信验证码继续发送到丢失设备。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "保护支付和重要账号",
+      "description": "优先检查银行、支付、邮箱、社交账号和密码管理器；使用可信设备修改关键密码、退出丢失设备会话，并查看有无异常交易。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "使用官方设备查找功能",
+      "description": "登录手机厂商提供的官方设备查找服务，尝试定位、播放提示音、锁定或留下联系方式；不要点击陌生人发来的所谓定位链接。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "判断是否需要报警",
+      "description": "有被盗迹象、出现人身威胁或设备内已有财产损失时，向公安机关说明时间、地点、设备特征和可疑线索。不要独自前往危险地点取回设备。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "补卡后复查名下号码",
+      "description": "恢复号码后检查验证码、呼叫转移和账号绑定；如担心身份被冒用，可使用工信部全国移动电话卡“一证通查”核对名下电话卡数量。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_phone_number",
+      "text": "丢失手机号码与所属运营商",
+      "required": true
+    },
+    {
+      "id": "check_device_account",
+      "text": "手机厂商账号及可用的账号恢复方式",
+      "required": true
+    },
+    {
+      "id": "check_device_id",
+      "text": "设备序列号、IMEI 或购买凭证",
+      "required": false
+    },
+    {
+      "id": "check_loss_timeline",
+      "text": "最后使用时间、地点和可能的移动轨迹",
+      "required": false
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "工业和信息化部",
+      "sourceTitle": "电话用户真实身份信息登记规定",
+      "sourceUrl": "https://www.miit.gov.cn/jgsj/waj/wjfb/art/2020/art_a11f4139cdfc47a7a008f1476ce36ce0.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "工业和信息化部通信管理局",
+      "sourceTitle": "全国移动电话卡“一证通查”",
+      "sourceUrl": "https://hljca.miit.gov.cn/bsfw/gsgg/art/2021/art_2a077216fcaf482a81a4b28988835480.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2021-10-15",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

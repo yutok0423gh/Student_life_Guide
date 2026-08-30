@@ -1,0 +1,108 @@
+{
+  "id": "guide_how_to_call_police",
+  "title": "怎么报警？",
+  "summary": "先保证自身安全，向110准确说明地点、事件、人员和当前危险。",
+  "categoryId": "safety",
+  "scenarioIds": [],
+  "keywords": [
+    "报警",
+    "110",
+    "紧急求助",
+    "公安",
+    "安全"
+  ],
+  "aliases": [
+    "怎么打110",
+    "遇到危险怎么办",
+    "报案怎么说"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "正在发生违法犯罪、危及人身财产安全或需要公安机关紧急处置时，先离开直接危险并拨打110。开口先说准确地点，再简要说明发生了什么、是否有人受伤、嫌疑人或危险物情况和你的联系方式；按接警员提问如实回答，保持电话畅通。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "先确保自己能安全报警",
+      "description": "能离开冲突、火源、车辆或可疑人员时先到安全处，不为拍照取证重新进入危险。有人受伤、起火等情况，按现场需要同时寻求120或119等紧急救援。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "第一时间说清地点",
+      "description": "说明城市、道路门牌、楼栋房间或显著地标；在高速、野外或陌生地点可补充行进方向、里程标志和手机地图位置，便于警力找到现场。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "简要讲清当前警情",
+      "description": "说明发生时间、事情经过、涉及人数、是否有人受伤或被困、嫌疑人特征和去向、是否有刀具火源等即时危险。先讲正在发生和最紧急的信息。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "按接警员指引行动",
+      "description": "如实回答姓名、电话和位置，听从是否等待、撤离、急救或保护现场等指引。报警后保持手机畅通，情况变化时及时更新，不拨打无关电话占线。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "安全前提下保留证据",
+      "description": "不要随意移动重要物品或删除记录，保存照片视频、聊天、付款、人员和车辆特征及证人联系方式。非紧急的政务咨询、投诉等事项，可按当地分工使用12345等渠道。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_location",
+      "text": "准确位置、方向和附近显著标志",
+      "required": true
+    },
+    {
+      "id": "check_incident",
+      "text": "发生时间、经过和当前危险",
+      "required": true
+    },
+    {
+      "id": "check_people",
+      "text": "伤者、嫌疑人、被困人员和证人信息",
+      "required": false
+    },
+    {
+      "id": "check_contact",
+      "text": "可保持畅通的报警人联系电话",
+      "required": true
+    },
+    {
+      "id": "check_evidence",
+      "text": "在确保安全前提下保存的现场和电子证据",
+      "required": false
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "国务院办公厅",
+      "sourceTitle": "国务院办公厅关于推动12345政务服务便民热线与110报警服务台高效对接联动的意见",
+      "sourceUrl": "https://www.mee.gov.cn/zcwj/gwywj/202205/t20220516_982293.shtml",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2022-05-16",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "南通市公安局",
+      "sourceTitle": "拨打110相关问答",
+      "sourceUrl": "https://gaj.nantong.gov.cn/ntsgaj/wdzsk/content/a3e2fd14-5378-4a43-9bcc-90e6faf5b7cb.html",
+      "sourceLevel": "CITY",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

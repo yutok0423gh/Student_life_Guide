@@ -1,0 +1,108 @@
+{
+  "id": "guide_five_insurances_one_fund",
+  "title": "五险一金是什么？",
+  "summary": "五险是五类社会保险，一金是住房公积金，缴费项目和账户都应核对。",
+  "categoryId": "career",
+  "scenarioIds": [],
+  "keywords": [
+    "五险一金",
+    "社会保险",
+    "养老保险",
+    "医疗保险",
+    "住房公积金"
+  ],
+  "aliases": [
+    "社保公积金",
+    "入职交哪些保险",
+    "五险有哪些"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "五险指基本养老、基本医疗、工伤、失业和生育保险，一金指住房公积金。具体缴费基数、比例和待遇受国家及参保缴存地规则影响，不能只看招聘中的一个总比例。入职后核对单位是否按你的真实信息办理登记，并通过当地人社、医保和公积金官方渠道查询账户。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "先理解五险分别保什么",
+      "description": "养老、医疗、工伤、失业、生育保险分别应对年老、疾病、工作伤害、失业和生育等法定风险；不同险种的单位和个人缴费责任并不相同。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "理解一金属于个人住房储金",
+      "description": "住房公积金由单位和在职职工缴存，单位和个人缴存部分都属于职工个人所有。账户可按条例及当地规则用于房租、购房贷款等住房消费。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "问清基数、比例和缴纳地",
+      "description": "入职前向单位确认社会保险和公积金的缴纳城市、起缴时间、缴费基数与比例。具体标准由法律和当地政策共同决定，不能用到手工资简单反推是否合规。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "入职后主动查询",
+      "description": "用本人身份通过官方人社、医保和住房公积金管理渠道查询登记、单位名称、缴费月份和基数。社会保险法规定个人有权查询缴费及权益记录。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "发现漏缴情形及时留痕",
+      "description": "保存劳动合同、工资条、个税和账户查询记录，先书面要求单位核对补正；仍有问题时，分别向参保地社会保险、医保或住房公积金主管经办渠道咨询处理。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_city",
+      "text": "社会保险和住房公积金缴纳城市",
+      "required": true
+    },
+    {
+      "id": "check_base_rate",
+      "text": "各项目缴费基数、比例和起缴月份",
+      "required": true
+    },
+    {
+      "id": "check_social_records",
+      "text": "人社、医保官方渠道的参保缴费记录",
+      "required": true
+    },
+    {
+      "id": "check_fund_records",
+      "text": "住房公积金官方渠道的账户缴存记录",
+      "required": true
+    },
+    {
+      "id": "check_employment",
+      "text": "劳动合同、工资条和扣款明细",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "国家市场监督管理总局",
+      "sourceTitle": "中华人民共和国社会保险法",
+      "sourceUrl": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e81d115419b4463ebb59ec46467fb136.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2018-12-29",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "国家行政法规库",
+      "sourceTitle": "住房公积金管理条例",
+      "sourceUrl": "https://xzfg.moj.gov.cn/front/law/detail?LawID=1822",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2026-08-10",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#3157d5" />
+    <meta
+      name="description"
+      content="给中国大陆学生与刚毕业年轻人的第一次独立生活操作手册。"
+    />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>初级成年人入门手册</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <div class="app-shell">
+      <aside class="desktop-rail" aria-label="主导航">
+        <a class="brand-lockup" href="#/home" aria-label="初级成年人入门手册首页">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span>
+            <strong>初级成年人</strong>
+            <small>入门手册</small>
+          </span>
+        </a>
+
+        <nav class="rail-nav">
+          <a href="#/home" data-nav-route="home"><span>首页</span><small>先判断问题</small></a>
+          <a href="#/search" data-nav-route="search"><span>搜索</span><small>直接描述事情</small></a>
+          <a href="#/favorites" data-nav-route="favorites"><span>收藏</span><small>留住常用步骤</small></a>
+          <a href="#/profile" data-nav-route="profile"><span>我的</span><small>地区与本地数据</small></a>
+        </nav>
+
+        <div class="rail-foot">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="connection-label">本地内容可用</span>
+          <button id="install-app" class="text-action" type="button" hidden>安装到设备</button>
+        </div>
+      </aside>
+
+      <header class="mobile-header">
+        <a class="mobile-brand" href="#/home">初级成年人入门手册</a>
+        <span id="mobile-connection-label" class="connection-chip">本地可用</span>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <div id="app" aria-live="polite"></div>
+      </main>
+
+      <aside class="book-edge" aria-label="手册状态">
+        <span class="edge-tab edge-tab-blue">行动</span>
+        <span class="edge-tab edge-tab-green">本地</span>
+        <span class="edge-tab edge-tab-gold">核验</span>
+        <span class="edge-note">先做下一步，再理解为什么</span>
+      </aside>
+    </div>
+
+    <nav class="mobile-nav" aria-label="主导航">
+      <a href="#/home" data-nav-route="home"><span aria-hidden="true">⌂</span><small>首页</small></a>
+      <a href="#/search" data-nav-route="search"><span aria-hidden="true">⌕</span><small>搜索</small></a>
+      <a href="#/favorites" data-nav-route="favorites"><span aria-hidden="true">♡</span><small>收藏</small></a>
+      <a href="#/profile" data-nav-route="profile"><span aria-hidden="true">人</span><small>我的</small></a>
+    </nav>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <noscript>网页版需要启用 JavaScript 才能读取本地手册。</noscript>
+    <script type="module" src="./src/app.js?app=2026-08-30-25"></script>
+  </body>
+</html>

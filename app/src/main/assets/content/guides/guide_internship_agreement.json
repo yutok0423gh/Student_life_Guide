@@ -1,0 +1,113 @@
+{
+  "id": "guide_internship_agreement",
+  "title": "实习协议是什么？",
+  "summary": "实习协议用来固定实习各方的身份、任务、报酬、安全与退出安排。",
+  "categoryId": "career",
+  "scenarioIds": [],
+  "keywords": [
+    "实习协议",
+    "三方实习协议",
+    "实习合同",
+    "实习报酬",
+    "实习证明"
+  ],
+  "aliases": [
+    "实习要签什么",
+    "实习合同怎么看",
+    "学校实习三方协议"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "实习协议是学生、实习单位，以及需要时学校之间确认实习安排和权利义务的书面文件。它通常不等同于劳动合同，也不能仅凭名称排除实际形成的劳动关系。签前重点看主体、岗位、期限、时间、报酬、保险、安全、证明、保密、知识产权、终止和争议处理。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "核对签约主体",
+      "description": "单位名称和盖章主体应与实际接收单位一致，写清学生身份和学校是否为协议方。个人微信联系人或部门名称不能替代完整单位主体。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "固定岗位与时间",
+      "description": "写清实习地点、岗位任务、指导人、起止日期、每日和每周安排、休息以及是否可能出差或调整岗位，避免使用无限扩张的概括表述。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "写清钱、保险和费用",
+      "description": "明确有无报酬、金额或算法、发放日、个税处理、交通餐饮住宿费用及保险安排。不要接受口头承诺覆盖书面条款。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "审查责任与退出条款",
+      "description": "关注安全培训、事故处理、保密和知识产权范围、实习证明条件、提前终止通知、违约责任和争议解决，警惕让学生承担不合理的无限责任。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "签完拿到完整副本",
+      "description": "确认各方签字或盖章、日期和附件齐全，保存纸质或可验证的电子副本。后续岗位、时间或报酬发生变化时，用书面补充约定留痕。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_parties",
+      "text": "学生、单位及学校等签约主体信息",
+      "required": true
+    },
+    {
+      "id": "check_work",
+      "text": "岗位、地点、期限、工时和指导安排",
+      "required": true
+    },
+    {
+      "id": "check_pay",
+      "text": "报酬、费用、税费和发放日期",
+      "required": true
+    },
+    {
+      "id": "check_safety",
+      "text": "保险、安全培训和事故处理条款",
+      "required": true
+    },
+    {
+      "id": "check_exit",
+      "text": "证明、终止、违约和争议处理条款",
+      "required": true
+    },
+    {
+      "id": "check_copy",
+      "text": "签字盖章完整的协议副本及附件",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中华人民共和国教育部",
+      "sourceTitle": "教育部关于加强和规范普通本科高校实习管理工作的意见",
+      "sourceUrl": "https://www.moe.gov.cn/srcsite/A08/s7056/201907/t20190724_392130.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2019-07-24",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "中华人民共和国司法部智慧普法平台",
+      "sourceTitle": "写给毕业生的劳动法律知识十问十答",
+      "sourceUrl": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxrdtj/202408/t20240811_504067.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2024-08-11",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

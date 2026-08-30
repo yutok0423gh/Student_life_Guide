@@ -1,0 +1,27 @@
+{
+  "name": "初级成年人入门手册",
+  "short_name": "成年人手册",
+  "description": "给中国大陆学生与刚毕业年轻人的第一次独立生活操作手册。",
+  "lang": "zh-CN",
+  "start_url": "./#/home",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f3f6f1",
+  "theme_color": "#3157d5",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
+

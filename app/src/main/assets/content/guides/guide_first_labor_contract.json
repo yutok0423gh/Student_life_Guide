@@ -1,0 +1,99 @@
+{
+  "id": "guide_first_labor_contract",
+  "title": "第一次签劳动合同要注意什么？",
+  "summary": "核对单位和核心条款，拿到完整合同并及时查询社保缴费。",
+  "categoryId": "career",
+  "scenarioIds": [],
+  "keywords": [
+    "劳动合同",
+    "入职",
+    "试用期",
+    "工资",
+    "社会保险"
+  ],
+  "aliases": [
+    "第一次签合同",
+    "入职合同怎么看",
+    "试用期合同"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先核对公司主体和岗位承诺，逐条确认期限、岗位地点、工时、工资、试用期、社保、休假和解除条件。建立劳动关系应订立书面劳动合同，已先用工的应自用工之日起一个月内签订；不要签空白合同，不交押金，不让单位扣押证件，并拿走双方签署的完整副本。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "确认与你签约的单位",
+      "description": "核对营业执照名称、统一社会信用代码、办公地址和签约主体是否与实际用工单位一致，问清关联公司、劳务派遣或外包安排，不要只看品牌名。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "逐项核对必备内容",
+      "description": "确认合同期限、工作内容和地点、工时休息、劳动报酬、社会保险、劳动保护和职业危害防护，以及法律规定应纳入的其他事项。口头承诺要落到书面。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "重点检查试用期",
+      "description": "试用期包含在劳动合同期限内，不能只签独立试用期协议；同一单位与同一劳动者只能约定一次试用期，期限和工资还须符合法律限制。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "拒绝空白和扣押条款",
+      "description": "不要在工资、岗位或日期空白的合同上签字，不接受以担保等名义收取财物，也不要让单位扣押居民身份证或其他证件。培训服务期、竞业限制等条款应看清范围和责任。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "拿副本并持续核对",
+      "description": "签署后取得与单位所持一致的完整合同和附件，保存入职、考勤、工资记录；入职后通过当地官方渠道查询社会保险登记和缴费，发现不一致及时书面提出。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_company",
+      "text": "用人单位完整名称、信用代码和经营状态",
+      "required": true
+    },
+    {
+      "id": "check_core_terms",
+      "text": "岗位地点、工时、工资、期限和试用期条款",
+      "required": true
+    },
+    {
+      "id": "check_benefits",
+      "text": "社会保险、休假、补贴和其他待遇说明",
+      "required": true
+    },
+    {
+      "id": "check_restrictions",
+      "text": "保密、培训服务期、竞业和解除条款",
+      "required": false
+    },
+    {
+      "id": "check_copy",
+      "text": "双方签字盖章完整的合同及附件副本",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中华人民共和国人力资源和社会保障部",
+      "sourceTitle": "中华人民共和国劳动合同法",
+      "sourceUrl": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/zcfg/fl/202011/t20201102_394622_wap.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

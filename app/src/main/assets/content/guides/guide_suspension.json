@@ -1,0 +1,99 @@
+{
+  "id": "guide_suspension",
+  "title": "想休学怎么办？",
+  "summary": "先联系学校确认条件和影响，获批并办完手续后再离校。",
+  "categoryId": "education",
+  "scenarioIds": [],
+  "keywords": [
+    "休学",
+    "复学",
+    "学籍",
+    "暂停学业",
+    "退学"
+  ],
+  "aliases": [
+    "想暂停上学",
+    "休学怎么申请",
+    "身体原因休学"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "尽快联系学院辅导员和教务或学籍部门，查看本校休学条件、材料、期限及复学要求。休学通常需要本人申请并经学校批准，次数和期限由学校规定；未收到正式批准前不要直接停止上课或离校，休学期满前按学校要求申请复学。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "先处理紧急健康或安全问题",
+      "description": "如果因身心健康、家庭突发事件或人身安全需要暂停，先获得必要的医疗、求助或安全支持，再由本人或可信联系人尽快告知学校。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "确认休学规则与替代方案",
+      "description": "询问休学条件、最短和最长时间、申请节点、所需证明，以及缓考、请假、减修等是否更适合。具体次数和期限由学校规定。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "算清学籍和生活影响",
+      "description": "逐项确认已选课程与成绩、学费住宿费、奖助学金、校园账户、档案、党团关系、医保或商业保险，以及复学后的年级和培养方案。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "提交申请并完成离校手续",
+      "description": "按校内流程提交申请和真实证明，等待正式审批，再办理退课、宿舍、财务、图书及物品交接。保存批准文件和全部回执。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "提前准备复学",
+      "description": "记下休学到期日和复学申请窗口，提前询问是否需要健康证明或其他材料。应在学校规定期限内提出复学申请，不要等到期限已过才联系。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_policy",
+      "text": "本校休学、保留学籍和复学规定",
+      "required": true
+    },
+    {
+      "id": "check_application",
+      "text": "休学申请表及学校要求的证明材料",
+      "required": true
+    },
+    {
+      "id": "check_impact",
+      "text": "课程、费用、住宿、奖助和保险影响清单",
+      "required": true
+    },
+    {
+      "id": "check_approval",
+      "text": "学校正式批准文件和离校手续回执",
+      "required": true
+    },
+    {
+      "id": "check_return_date",
+      "text": "休学到期日、复学窗口和复学材料",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中华人民共和国教育部",
+      "sourceTitle": "普通高等学校学生管理规定",
+      "sourceUrl": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585064.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2017-02-04",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

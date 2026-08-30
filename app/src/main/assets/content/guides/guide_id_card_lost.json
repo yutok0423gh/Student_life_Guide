@@ -1,0 +1,103 @@
+{
+  "id": "guide_id_card_lost",
+  "title": "身份证丢了怎么办？",
+  "summary": "申报挂失、补领居民身份证，并同步处理可能受影响的账户。",
+  "categoryId": "documents",
+  "scenarioIds": [],
+  "keywords": [
+    "身份证",
+    "丢失",
+    "补办",
+    "异地补领",
+    "挂失"
+  ],
+  "aliases": [
+    "身份证找不到了",
+    "身份证被偷了",
+    "异地补身份证"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先向公安机关申报挂失并申请补领。居民身份证异地补领已全国通办，但所需材料、照片和领取方式以受理地公安机关清单为准；若银行卡或手机同时丢失，要分别立即挂失。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "确认是否伴随盗窃或人身危险",
+      "description": "若证件被盗、现场仍有危险或同时发生其他违法犯罪，先到安全地点并报警；单纯遗失可直接办理挂失和补领。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "查询受理地公安机关要求",
+      "description": "通过当地公安机关或政务服务平台，确认就近受理点、预约方式、身份证明、照片以及费用要求，不要照搬其他城市的材料清单。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "申报挂失并申请补领",
+      "description": "到受理点如实说明丢失情况，完成身份核验、照片和指纹等受理流程，保存受理凭证。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "处理近期必须使用证件的事项",
+      "description": "如近期需要乘车、考试或办理业务，向受理机关和具体业务单位询问可接受的临时身份证明；不要假设所有场景都接受同一种证明。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "检查相关账户",
+      "description": "留意银行卡、支付账户、电话卡等是否出现异常；发现可疑交易或冒名业务时，立即联系对应机构的官方渠道。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_identity_material",
+      "text": "受理地认可的身份证明材料",
+      "required": true
+    },
+    {
+      "id": "check_photo",
+      "text": "受理地要求的照片或照片回执",
+      "required": true
+    },
+    {
+      "id": "check_loss_notes",
+      "text": "丢失时间、地点及同时丢失物品的记录",
+      "required": false
+    },
+    {
+      "id": "check_receipt",
+      "text": "补领受理凭证",
+      "required": false
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "公安部（北京市人民政府转载）",
+      "sourceTitle": "户口居民身份证管理工作规范（试行）",
+      "sourceUrl": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202211/t20221116_2860246.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "江苏省人民政府",
+      "sourceTitle": "如何异地补办身份证？",
+      "sourceUrl": "https://www.js.gov.cn/art/2024/7/29/art_90838_6305.html",
+      "sourceLevel": "PROVINCIAL",
+      "publishedAt": "2024-07-29",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

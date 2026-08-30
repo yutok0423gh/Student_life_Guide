@@ -1,0 +1,108 @@
+{
+  "id": "guide_online_shopping_dispute",
+  "title": "网购被坑怎么维权？",
+  "summary": "先留存交易与商品证据，按商家、平台、12315和争议程序逐级处理。",
+  "categoryId": "safety",
+  "scenarioIds": [],
+  "keywords": [
+    "网购",
+    "退款",
+    "七天无理由",
+    "消费投诉",
+    "12315"
+  ],
+  "aliases": [
+    "网购被骗",
+    "商家不退款",
+    "买到假货"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先保存商品页面、订单、支付、聊天、物流和开箱证据，在平台内提出明确诉求并要求商家说明。符合条件的网络商品可在签收次日起七日内发出无理由退货通知，但定作、鲜活易腐等商品存在法定例外；协商不成可通过全国12315平台或12315热线投诉。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "先固定交易页面和实物",
+      "description": "保存商品标题、宣传承诺、规格、商家主体、订单、支付、发票、物流和完整沟通记录；有质量或错发问题时拍摄未剪辑开箱过程、标签和瑕疵。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "判断适用哪种退换理由",
+      "description": "区分质量不符合约定与七日无理由退货。定作、鲜活易腐、部分拆封数字商品、报刊等不适用无理由退货，其他特殊商品也可能需在购买流程中经消费者显著确认。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "在平台内发起售后",
+      "description": "选择与事实一致的原因，写明退款、退货、换货或修理等具体诉求并上传证据。需要无理由退货时，应在收到商品之日起七日内通知商家，并保留退货凭证。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "要求平台介入并保存结果",
+      "description": "商家拒绝或失联时申请平台处理，要求保全商家真实名称、地址和有效联系方式等信息，保存每次提交、平台裁定和退款状态。不要离开平台向陌生账户转保证金。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "通过12315等正式渠道处理",
+      "description": "协商不成，可通过全国12315平台、12315热线或市场监管部门公布渠道投诉，提供本人真实信息、经营者名称地址、具体诉求和事实依据；必要时再按约定仲裁或依法诉讼。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_listing",
+      "text": "商品页面、宣传承诺和商家主体截图",
+      "required": true
+    },
+    {
+      "id": "check_order",
+      "text": "订单、支付、发票和物流记录",
+      "required": true
+    },
+    {
+      "id": "check_product",
+      "text": "开箱、商品标签、瑕疵或不符情况证据",
+      "required": true
+    },
+    {
+      "id": "check_communications",
+      "text": "商家与平台沟通、售后和处理结果",
+      "required": true
+    },
+    {
+      "id": "check_request",
+      "text": "投诉对象、具体诉求和事实时间线",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "国家市场监督管理总局",
+      "sourceTitle": "网络购买商品七日无理由退货暂行办法",
+      "sourceUrl": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_26ca8fe29e184edd899fa0a7a060d935.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2017-01-06",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "国家市场监督管理总局",
+      "sourceTitle": "市场监督管理投诉举报处理办法",
+      "sourceUrl": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2026/art_e4d03a20c0fd49769e408c7bf3791ff5.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2025-12-30",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

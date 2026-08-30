@@ -1,0 +1,117 @@
+{
+  "id": "guide_tripartite_agreement",
+  "title": "三方协议是什么？",
+  "summary": "毕业生、用人单位与学校在正式劳动关系建立前确认就业安排的协议。",
+  "categoryId": "career",
+  "scenarioIds": [],
+  "keywords": [
+    "三方协议",
+    "就业协议",
+    "毕业去向",
+    "网签",
+    "应届毕业生"
+  ],
+  "aliases": [
+    "就业三方",
+    "学校网签",
+    "三方和劳动合同"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "三方协议通常是毕业生、用人单位和学校在正式建立劳动人事关系前确认就业意向、权利义务及毕业去向的书面协议，不等同于入职后的劳动合同。签前看清单位、岗位地点、待遇承诺、生效条件、违约和解约流程；毕业去向应由本人通过学校指定系统如实登记确认。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "先确认文件性质",
+      "description": "看清这是教育部门就业协议、单位录用意向书还是劳动合同。三方协议主要服务毕业就业安排，正式入职后仍应依法签订劳动合同。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "核对单位与录用条件",
+      "description": "确认用人单位主体、岗位、工作地点、入职时间、薪酬福利、落户或档案承诺，以及体检、资格审查、取得毕业证等生效条件，不接受空白内容。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "看清违约和解约流程",
+      "description": "重点阅读违约责任、解约条件、通知方式、学校系统操作和新协议申请规则。不要只听“随时能解约”或“必须赔固定金额”的口头说法。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "通过正式平台签约留存",
+      "description": "使用学校或教育部门指定的网签平台或规范纸质文本，完成本人确认、单位签署和学校审核，保存最终协议、补充条款和系统状态。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "如实确认毕业去向",
+      "description": "离校前按学校要求自主登记并确认毕业去向、档案和户口信息，变化时按当年规定及时更新。自2023年起就业报到证已取消，不再作为招聘录用、落户和档案接收转递等手续的必需材料。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_employer",
+      "text": "用人单位主体、岗位、地点和入职时间",
+      "required": true
+    },
+    {
+      "id": "check_offer_terms",
+      "text": "薪酬福利、录用条件及其他书面承诺",
+      "required": true
+    },
+    {
+      "id": "check_breach",
+      "text": "生效、违约、解除和重新签约条款",
+      "required": true
+    },
+    {
+      "id": "check_final_copy",
+      "text": "三方完成签署后的协议和平台记录",
+      "required": true
+    },
+    {
+      "id": "check_destination",
+      "text": "毕业去向、档案和户口信息确认记录",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中华人民共和国教育部",
+      "sourceTitle": "关于推荐使用全国高校毕业生网上签约平台的公告",
+      "sourceUrl": "https://www.moe.gov.cn/jyb_xxgk/s5743/s5744/A15/202207/t20220706_643711.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2022-07-06",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "中华人民共和国教育部",
+      "sourceTitle": "教育部办公厅关于建立高校毕业生毕业去向登记制度的通知",
+      "sourceUrl": "https://www.moe.gov.cn/srcsite/A15/s3265/202306/t20230621_1065229.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2023-06-08",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_003",
+      "sourceName": "中华人民共和国司法部智慧普法平台",
+      "sourceTitle": "写给毕业生的劳动法律知识十问十答",
+      "sourceUrl": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxrdtj/202408/t20240811_504067.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2024-08-11",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

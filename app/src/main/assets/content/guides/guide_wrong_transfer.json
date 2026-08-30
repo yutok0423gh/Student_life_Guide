@@ -1,0 +1,103 @@
+{
+  "id": "guide_wrong_transfer",
+  "title": "转错账怎么办？",
+  "summary": "立即联系银行或支付平台，保存转账证据，并依法与收款人协商或追索。",
+  "categoryId": "finance",
+  "scenarioIds": [],
+  "keywords": [
+    "转错账",
+    "转账",
+    "不当得利",
+    "退款",
+    "收款人"
+  ],
+  "aliases": [
+    "钱转错人了",
+    "打错款",
+    "转账能撤回吗"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "马上联系银行或支付平台说明误转，询问能否协助止付或联系收款人，并保存完整流水。已到账的款项通常不能由你自行撤回；协商不成时，可依据不当得利规则通过司法途径追索。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "立即联系转出机构",
+      "description": "从银行或支付平台官方入口报告误转，提供时间、金额、流水号和收款信息，询问能否止付、协助联系或登记争议。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "保存完整证据",
+      "description": "保留转账回单、账户流水、原本要付款的对象与用途、发现错误的时间，以及后续沟通记录。不要删除原始记录。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "通过可核实方式联系收款人",
+      "description": "清楚说明误转事实并提出原路返还，避免泄露密码、验证码或额外付款；对方要求先交手续费时先向平台核实。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "区分误转与诈骗",
+      "description": "如果转账是在欺骗、胁迫或冒充身份下完成，按诈骗处理，立即报警并向银行申请紧急处置，而不是只当普通误转。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "协商不成时咨询司法途径",
+      "description": "收款人拒绝返还时，可携证据咨询公共法律服务或法院，评估以不当得利为由起诉；收款人身份调取等问题按法院程序处理。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_transfer_receipt",
+      "text": "转账回单、流水号、时间和金额",
+      "required": true
+    },
+    {
+      "id": "check_original_purpose",
+      "text": "原本收款对象与付款用途证明",
+      "required": true
+    },
+    {
+      "id": "check_contact_records",
+      "text": "与银行、平台和收款人的沟通记录",
+      "required": true
+    },
+    {
+      "id": "check_police_or_legal",
+      "text": "报警受理信息或法律咨询记录",
+      "required": false
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "上海市司法局",
+      "sourceTitle": "企业支付货款转错账户，应如何追回钱款？",
+      "sourceUrl": "https://sh.12348.gov.cn/sites/12348/news-detail.jsp?category=373fbf8db1c74c21bd14ee152d674994&entityid=d1c6d53450e14c2eab371b1f21c7a244",
+      "sourceLevel": "CITY",
+      "publishedAt": "2024-03-19",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "河南省高级人民法院",
+      "sourceTitle": "转账时转错银行账户，属不当得利应当返还",
+      "sourceUrl": "https://www.hncourt.gov.cn/public/detail.php?id=163734",
+      "sourceLevel": "PROVINCIAL",
+      "publishedAt": "2016-04-07",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

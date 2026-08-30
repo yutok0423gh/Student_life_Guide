@@ -1,0 +1,108 @@
+{
+  "id": "guide_wage_arrears",
+  "title": "公司拖欠工资怎么办？",
+  "summary": "核清欠薪金额并固定劳动和工资证据，再按人社、调解仲裁程序处理。",
+  "categoryId": "career",
+  "scenarioIds": [],
+  "keywords": [
+    "拖欠工资",
+    "欠薪",
+    "劳动仲裁",
+    "工资",
+    "人社"
+  ],
+  "aliases": [
+    "公司不发工资",
+    "工资晚发",
+    "老板欠钱"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先保存能证明劳动关系、工作时间和工资标准的材料，算清每个工资周期的应发、已发和欠付金额，再向公司书面催付。协商无果，可向实际用工所在地人社部门咨询劳动保障监察渠道，或就劳动报酬争议依法申请劳动仲裁；不要因等待口头承诺而错过程序期限。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "立即备份关键证据",
+      "description": "保存劳动合同、入职材料、考勤排班、工作指令、工资条、银行流水、社保记录、离职材料和沟通记录。不要只把证据留在可能被停用的公司账号或设备中。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "逐月算清欠付金额",
+      "description": "列出约定工资、绩效或加班项目、应发日、实际收到金额和差额，区分工资、报销、借款等不同性质，保留计算依据。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "向公司书面催付",
+      "description": "通过可留痕渠道向有权负责人或人事财务说明欠薪期间、金额和依据，提出明确付款期限并保存回复。需要签收任何和解或离职文件时，先核对是否包含放弃权利条款。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "联系用工所在地人社渠道",
+      "description": "向实际用工所在地人力资源社会保障部门咨询劳动保障监察、欠薪线索反映或劳动争议受理渠道，并按要求提交单位信息、本人身份和证据。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "依法申请调解或仲裁",
+      "description": "劳动报酬争议可以协商、申请调解或向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除法律另有规定外再向法院起诉。注意仲裁时效及离职后期限，复杂情况尽早咨询。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_relation",
+      "text": "劳动合同、入职、工作指令和社保等关系证据",
+      "required": true
+    },
+    {
+      "id": "check_attendance",
+      "text": "考勤、排班、工作成果和加班记录",
+      "required": true
+    },
+    {
+      "id": "check_wage",
+      "text": "工资约定、工资条、银行流水和欠薪明细",
+      "required": true
+    },
+    {
+      "id": "check_company",
+      "text": "公司全称、信用代码和实际用工地址",
+      "required": true
+    },
+    {
+      "id": "check_demands",
+      "text": "书面催付、投诉或仲裁提交记录",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中华人民共和国人力资源和社会保障部",
+      "sourceTitle": "中华人民共和国劳动争议调解仲裁法",
+      "sourceUrl": "https://www.mohrss.gov.cn/SYrlzyhshbzb/ztzl/ldrszytjzc/fgzc/202207/t20220714_457857.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2007-12-29",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "国务院客户端",
+      "sourceTitle": "被拖欠工资了？来这个全国平台反映！",
+      "sourceUrl": "https://app.www.gov.cn/govdata/gov/202112/25/480029/article.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2021-12-25",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

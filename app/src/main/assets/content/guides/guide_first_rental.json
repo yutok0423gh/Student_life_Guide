@@ -1,0 +1,99 @@
+{
+  "id": "guide_first_rental",
+  "title": "第一次租房要注意什么？",
+  "summary": "核验出租权利和房屋安全，把租金、押金与退租条件写进合同。",
+  "categoryId": "housing",
+  "scenarioIds": [],
+  "keywords": [
+    "租房",
+    "租赁合同",
+    "押金",
+    "房东",
+    "合租"
+  ],
+  "aliases": [
+    "第一次在外租房",
+    "签租房合同",
+    "租房避坑"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先实地看房并核验出租人的身份和产权或合法出租权利，不租厨房、阳台、过道等被单独改作居住的空间。使用实名书面合同，把租金、押金、费用、维修、提前解约和退租验收写清楚；付款走可追溯渠道并保存凭证。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "核验人和房",
+      "description": "查看出租人身份证明、不动产权属证书或其他合法出租权利材料；如果是转租，核对原合同和出租人同意转租的依据。重要信息不一致时先停止付款。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "实地检查居住条件",
+      "description": "检查门锁、水电燃气、消防、漏水、噪声、通风和家具家电，了解通勤及周边环境。厨房、卫生间、阳台、过道、地下储藏室、车库等非居住空间不得被单独出租用于居住。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "算清全部费用",
+      "description": "问清租金、押金、中介费、物业费、水电燃气、网络费及其计价方式，确认由谁缴纳、何时结算，并警惕明显低价和催促立刻转账。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "逐条写进实名合同",
+      "description": "写明房屋、期限、租金、支付日、押金数额和返还时间、可扣押金情形、维修责任、续租、提前解约、转租及违约处理，不接受只有口头承诺的关键条件。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "交接留痕并办理备案",
+      "description": "签字后双方各留完整合同，按清单拍摄房屋和表底读数，付款备注用途并保留凭证。出租人应办理租赁合同备案；未办理时，承租人可以按当地平台和流程办理。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_lessor_identity",
+      "text": "出租人身份证明",
+      "required": true
+    },
+    {
+      "id": "check_rental_right",
+      "text": "产权证明或其他合法出租权利材料",
+      "required": true
+    },
+    {
+      "id": "check_contract",
+      "text": "双方签署的完整住房租赁合同及附件",
+      "required": true
+    },
+    {
+      "id": "check_handover",
+      "text": "房屋交接清单、照片、视频和表底读数",
+      "required": true
+    },
+    {
+      "id": "check_payment",
+      "text": "租金、押金和其他费用的付款凭证",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "国家行政法规库",
+      "sourceTitle": "住房租赁条例",
+      "sourceUrl": "https://xzfg.moj.gov.cn/front/law/detail?LawID=1774",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2025-07-16",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

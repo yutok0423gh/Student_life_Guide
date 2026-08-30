@@ -1,0 +1,99 @@
+{
+  "id": "guide_change_major",
+  "title": "想转专业怎么办？",
+  "summary": "核对学校条件和时间，在理解培养差异后按正式流程申请。",
+  "categoryId": "education",
+  "scenarioIds": [],
+  "keywords": [
+    "转专业",
+    "换专业",
+    "培养方案",
+    "学籍",
+    "申请"
+  ],
+  "aliases": [
+    "不喜欢现在的专业",
+    "大学怎么换专业",
+    "跨学院转专业"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先找学校当年的转专业办法和通知，核对年级、成绩、课程、招生类别及目标专业考核条件。比较两个培养方案和可能延长学制、补修课程等影响，再在校内系统按期申请；国家规定允许学校建立转专业制度，但具体条件和程序由学校制定。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "确认转专业动机",
+      "description": "把兴趣、能力、课程体验和职业方向拆开分析，先通过课程旁听、专业介绍、师生咨询了解目标专业，避免只因一门课或短期压力仓促决定。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "找当年有效规则",
+      "description": "查看学校教务处、学院官网和校内系统的正式办法，核对申请对象、限制情形、名额、成绩或先修课要求、材料、考核方式和截止时间。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "比较培养方案成本",
+      "description": "对照已修课程能否认定、需要补修的必修课、后续先修关系、学费差异和是否可能延长学习时间，并向两边学院或教务部门确认。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "按流程提交和参加考核",
+      "description": "通过指定系统提交真实完整材料，参加笔试、面试或其他考核，保存提交和通知记录。不要相信收费代办、内部名额或保证转入。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "等正式结果再调整学业",
+      "description": "以学校正式审批结果为准；获批后核对学籍、班级、课程认定和新培养计划，未获批则结合辅修、选修、微专业或后续升学重新安排。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_policy",
+      "text": "学校当年转专业办法和通知",
+      "required": true
+    },
+    {
+      "id": "check_eligibility",
+      "text": "本人年级、成绩、招生类别及其他资格条件",
+      "required": true
+    },
+    {
+      "id": "check_programs",
+      "text": "原专业与目标专业培养方案对照",
+      "required": true
+    },
+    {
+      "id": "check_materials",
+      "text": "申请表、成绩材料和学校要求的其他证明",
+      "required": true
+    },
+    {
+      "id": "check_submission",
+      "text": "申请提交、考核和结果通知记录",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中华人民共和国教育部",
+      "sourceTitle": "普通高等学校学生管理规定",
+      "sourceUrl": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585064.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2017-02-04",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

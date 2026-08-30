@@ -1,0 +1,94 @@
+{
+  "id": "guide_failed_course",
+  "title": "挂科了怎么办？",
+  "summary": "先核对成绩与校规，再在期限内处理复核、补考或重修。",
+  "categoryId": "education",
+  "scenarioIds": [],
+  "keywords": [
+    "挂科",
+    "不及格",
+    "补考",
+    "重修",
+    "成绩"
+  ],
+  "aliases": [
+    "考试没过",
+    "课程不及格",
+    "挂科怎么办"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先在教务系统核对成绩构成，认为登记或评分流程有误时，在学校规定期限内申请复核。然后查本校培养方案和学籍规定，确认这门课能否补考、是否必须重修、何时选课以及对学分和毕业的影响；这些具体办法由学校规定。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "确认成绩和课程性质",
+      "description": "核对课程名称、学分、必修或选修性质、平时与期末成绩构成，并保存教务系统页面。先排除漏登、错登或缺考状态不符。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "需要时按期申请复核",
+      "description": "如果对成绩登记或评定程序有具体疑问，查看学校成绩复核办法，在期限内通过规定渠道提出，不要把向教师私下求改分当作正式复核。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "查清本校补考重修规则",
+      "description": "学校决定课程考核以及不及格课程是否补考或重修。确认报名入口、时间、资格、成绩记载方式、课程替代规则和是否影响奖助、推免、毕业或学位。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "尽快补上知识和学分计划",
+      "description": "联系任课教师、学院教务或学业导师分析失分原因，安排复习、选课和后续学期学分，避免先修课程冲突导致连锁延误。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "保留正式结果",
+      "description": "完成报名和考核后核对新成绩及学分是否入账。教育部规定，通过补考、重修获得的成绩应予标注，具体展示方式以学校成绩单制度为准。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_score",
+      "text": "教务系统成绩及成绩构成记录",
+      "required": true
+    },
+    {
+      "id": "check_school_rules",
+      "text": "本校学籍管理、成绩复核和补考重修规定",
+      "required": true
+    },
+    {
+      "id": "check_deadlines",
+      "text": "复核、报名、选课和考试时间",
+      "required": true
+    },
+    {
+      "id": "check_study_plan",
+      "text": "培养方案、已获学分和后续课程安排",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中华人民共和国教育部",
+      "sourceTitle": "普通高等学校学生管理规定",
+      "sourceUrl": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585064.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2017-02-04",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

@@ -1,0 +1,108 @@
+{
+  "id": "guide_dorm_move_in",
+  "title": "第一次住宿舍要准备什么？",
+  "summary": "按学校通知办理入住，核对设施，了解用电、门禁与报修规则。",
+  "categoryId": "housing",
+  "scenarioIds": [],
+  "keywords": [
+    "宿舍",
+    "入住",
+    "寝室",
+    "开学",
+    "宿舍安全"
+  ],
+  "aliases": [
+    "第一次住校",
+    "宿舍带什么",
+    "新生寝室准备"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先看学校和宿舍管理部门的正式入住通知，确认报到材料、床铺尺寸、可带物品和禁用电器。入住当天拍照核对设施，立即报修异常；记住门禁、用电、访客、消防和报修规则，贵重物品随身或上锁保管。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "只按学校正式通知准备",
+      "description": "查看录取材料、学校官网、迎新系统或宿舍管理部门通知，确认楼栋、入住时间、身份材料、床铺尺寸和用品限制，不要只凭往届清单购买。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "当面核对房间设施",
+      "description": "检查门锁、床架、插座、照明、窗户、消防通道和公共设施；对原有破损拍照并通过宿管或报修系统留痕，避免退宿时责任不清。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "弄清宿舍管理规则",
+      "description": "确认门禁、晚归登记、访客、卫生、调宿、用电功率和禁用物品等规定。不同学校和楼栋可能不同，以本校已公布制度为准。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "先处理消防和用电安全",
+      "description": "不堵塞通道，不私拉乱接电线，不拆停消防设施；只使用学校允许的电器，发现插座发热、漏电或设施损坏立即断开使用并报修。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "建立个人与共同生活边界",
+      "description": "离开时锁门，证件、手机和钱包不要随手放置；与室友尽早商量作息、卫生、空调和公共用品规则，遇到安全或冲突问题及时联系宿管、辅导员或学校保卫部门。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_notice",
+      "text": "学校正式入住通知和宿舍管理规定",
+      "required": true
+    },
+    {
+      "id": "check_identity",
+      "text": "学校要求的身份证明和报到材料",
+      "required": true
+    },
+    {
+      "id": "check_bedding",
+      "text": "按实际床铺尺寸准备的床上用品",
+      "required": true
+    },
+    {
+      "id": "check_inventory_photos",
+      "text": "入住时的设施清单、照片和报修记录",
+      "required": false
+    },
+    {
+      "id": "check_emergency_contacts",
+      "text": "宿管、辅导员、报修和校内保卫联系方式",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中华人民共和国教育部",
+      "sourceTitle": "教育部办公厅关于进一步加强高校学生住宿管理的通知",
+      "sourceUrl": "https://www.moe.gov.cn/s78/A12/szs_lef/moe_1422/s256/201209/t20120918_172192.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "福建省公安厅",
+      "sourceTitle": "学生在校住宿防盗的几点措施",
+      "sourceUrl": "https://gat.fujian.gov.cn/jwdt/ffzn/fd/201702/t20170215_2236279.htm",
+      "sourceLevel": "PROVINCIAL",
+      "publishedAt": "2017-02-15",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

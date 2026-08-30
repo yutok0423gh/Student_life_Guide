@@ -1,0 +1,2608 @@
+[
+  {
+    "id": "guide_bank_card_frozen",
+    "title": "银行卡被冻结怎么办？",
+    "summary": "先向开户行查清限制类型和主责单位，再按正式渠道提交核验材料。",
+    "categoryId": "finance",
+    "scenarioIds": [],
+    "keywords": [
+      "银行卡",
+      "冻结",
+      "止付",
+      "限制交易",
+      "反诈"
+    ],
+    "aliases": [
+      "银行卡用不了",
+      "账户被冻",
+      "非柜面被限制"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先联系开户行，问清是银行风险控制、涉诈限制还是司法冻结，并取得主责单位、联系方式和所需材料。按银行或有权机关的正式渠道核验申诉；不要向任何“解冻中介”交保证金。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "向开户行确认限制信息",
+        "description": "询问限制类型、开始时间、影响范围、采取措施的主责单位、可联系渠道以及需要提交的材料，并记录客服工单或网点答复。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "整理资金来源和交易证据",
+        "description": "按时间顺序准备合同、聊天记录、订单、工资或奖学金证明、转账凭证等，说明相关资金的真实来源和用途。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "联系正式主责单位核验",
+        "description": "通过银行提供或政府官网核实的渠道联系采取措施的机构，询问申诉、补充材料和查询进度方式；不同原因没有统一解冻时限。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "保护基本生活与其他账户",
+        "description": "向银行和主责单位如实说明工资、学费或基本生活支出需求，并按其正式程序申请处理；同时检查其他账户是否收到风险提示。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "识别二次诈骗",
+        "description": "监管部门不会要求向个人账户缴纳“认证金”“保证金”来解冻。遇到此类要求，停止付款并通过机构官网重新核实。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_bank_response",
+        "text": "开户行提供的限制类型、主责单位和工单记录",
+        "required": true
+      },
+      {
+        "id": "check_identity",
+        "text": "本人有效身份证明",
+        "required": true
+      },
+      {
+        "id": "check_fund_evidence",
+        "text": "资金来源、交易背景和用途证明",
+        "required": true
+      },
+      {
+        "id": "check_contact_log",
+        "text": "与银行或主责单位沟通的时间线",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "云南省公安厅",
+        "sourceTitle": "银行卡被冻结的处理说明",
+        "sourceUrl": "https://gonganting.yn.gov.cn/pages_16767_858697.aspx",
+        "sourceLevel": "PROVINCIAL",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "全国人民代表大会常务委员会",
+        "sourceTitle": "中华人民共和国反电信网络诈骗法",
+        "sourceUrl": "https://www.npc.gov.cn/c2/c30834/202209/t20220902_319186.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2022-09-02",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_003",
+        "sourceName": "国家金融监督管理总局",
+        "sourceTitle": "警惕以“账户冻结”为名索要解冻资金的诈骗",
+        "sourceUrl": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=937724&generaltype=0&itemId=4100",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_bank_card_lost",
+    "title": "银行卡丢了怎么办？",
+    "summary": "立即通过发卡银行官方渠道挂失，并核对有无非本人交易。",
+    "categoryId": "finance",
+    "scenarioIds": [],
+    "keywords": [
+      "银行卡",
+      "丢失",
+      "挂失",
+      "盗刷",
+      "补卡"
+    ],
+    "aliases": [
+      "卡丢了",
+      "银行卡找不到",
+      "银行卡被偷"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "立即从发卡银行官网、官方 App、卡背面留存信息或营业网点找到官方渠道办理挂失，并检查近期交易。发现非本人交易时，马上向银行报告、保存证据；有盗窃或诈骗线索再报警。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "通过官方渠道挂失",
+        "description": "联系发卡银行办理临时或正式挂失，确认卡片当前能否交易以及后续补卡要求。不要使用短信或搜索广告里未经核实的号码。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "检查账户交易",
+        "description": "查看丢失前后的消费、取现、转账和绑定支付记录，把可疑交易的时间、金额、商户与流水号截图保存。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "报告非本人交易",
+        "description": "如发现异常，立即向银行说明并按其争议处理流程提交材料；涉及盗窃、诈骗或持续损失时，向公安机关报案并保存受理信息。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "办理补卡并恢复绑定",
+        "description": "按发卡银行要求携带有效身份证明补卡，随后逐项更新工资、助学金、自动扣款和支付平台绑定。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "继续观察账户",
+        "description": "补卡后仍要关注交易提醒；如果身份证和手机也丢失，分别完成证件、电话卡和重要账号的安全处理。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_bank_name",
+        "text": "发卡银行名称与卡号后四位",
+        "required": true
+      },
+      {
+        "id": "check_identity",
+        "text": "银行认可的有效身份证明",
+        "required": true
+      },
+      {
+        "id": "check_transactions",
+        "text": "近期交易记录和可疑流水截图",
+        "required": false
+      },
+      {
+        "id": "check_case_receipt",
+        "text": "报警或银行争议受理凭证",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中国人民银行",
+        "sourceTitle": "支付结算办法",
+        "sourceUrl": "https://www.pbc.gov.cn/zhengwugongkai/attachDir/2025/11/2025111818072979794.pdf",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "中国人民银行",
+        "sourceTitle": "金融网络安全知识手册",
+        "sourceUrl": "https://www.pbc.gov.cn/eportal/fileDir/image_public/UserFiles/goutongjiaoliu/upload/File/%E9%87%91%E8%9E%8D%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%9F%A5%E8%AF%86%E6%89%8B%E5%86%8C%281%29.pdf",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_change_major",
+    "title": "想转专业怎么办？",
+    "summary": "核对学校条件和时间，在理解培养差异后按正式流程申请。",
+    "categoryId": "education",
+    "scenarioIds": [],
+    "keywords": [
+      "转专业",
+      "换专业",
+      "培养方案",
+      "学籍",
+      "申请"
+    ],
+    "aliases": [
+      "不喜欢现在的专业",
+      "大学怎么换专业",
+      "跨学院转专业"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先找学校当年的转专业办法和通知，核对年级、成绩、课程、招生类别及目标专业考核条件。比较两个培养方案和可能延长学制、补修课程等影响，再在校内系统按期申请；国家规定允许学校建立转专业制度，但具体条件和程序由学校制定。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "确认转专业动机",
+        "description": "把兴趣、能力、课程体验和职业方向拆开分析，先通过课程旁听、专业介绍、师生咨询了解目标专业，避免只因一门课或短期压力仓促决定。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "找当年有效规则",
+        "description": "查看学校教务处、学院官网和校内系统的正式办法，核对申请对象、限制情形、名额、成绩或先修课要求、材料、考核方式和截止时间。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "比较培养方案成本",
+        "description": "对照已修课程能否认定、需要补修的必修课、后续先修关系、学费差异和是否可能延长学习时间，并向两边学院或教务部门确认。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "按流程提交和参加考核",
+        "description": "通过指定系统提交真实完整材料，参加笔试、面试或其他考核，保存提交和通知记录。不要相信收费代办、内部名额或保证转入。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "等正式结果再调整学业",
+        "description": "以学校正式审批结果为准；获批后核对学籍、班级、课程认定和新培养计划，未获批则结合辅修、选修、微专业或后续升学重新安排。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_policy",
+        "text": "学校当年转专业办法和通知",
+        "required": true
+      },
+      {
+        "id": "check_eligibility",
+        "text": "本人年级、成绩、招生类别及其他资格条件",
+        "required": true
+      },
+      {
+        "id": "check_programs",
+        "text": "原专业与目标专业培养方案对照",
+        "required": true
+      },
+      {
+        "id": "check_materials",
+        "text": "申请表、成绩材料和学校要求的其他证明",
+        "required": true
+      },
+      {
+        "id": "check_submission",
+        "text": "申请提交、考核和结果通知记录",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "普通高等学校学生管理规定",
+        "sourceUrl": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585064.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2017-02-04",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_cross_region_medical_care",
+    "title": "异地看病怎么办？",
+    "summary": "跨省就医前办理备案、查询联网定点机构，并携带医保凭证直接结算。",
+    "categoryId": "health",
+    "scenarioIds": [],
+    "keywords": [
+      "异地就医",
+      "跨省就医",
+      "医保备案",
+      "直接结算",
+      "定点医院"
+    ],
+    "aliases": [
+      "外地看病",
+      "跨省看病怎么报销",
+      "异地医保"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "非紧急跨省就医前，先通过国家医保服务平台等官方渠道办理异地就医备案，并查询就医地的跨省联网定点医药机构。就医时出示医保电子凭证、有效身份证件或社会保障卡；未直接结算的费用按参保地规则处理。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "确认参保状态和就医类型",
+        "description": "确认医保待遇有效，并判断属于异地长期居住、异地转诊、异地急诊抢救还是其他临时外出就医，备案类型会影响材料。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "通过官方渠道备案",
+        "description": "可使用国家医保服务平台 App、国家异地就医备案小程序、国务院客户端或参保地经办窗口，按页面选择参保地、就医地和备案类型。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "查询联网定点机构",
+        "description": "在国家医保官方查询服务中确认目标医院或药店是否开通相应跨省直接结算，不要仅凭医院名称推定可以结算。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "就医时主动使用医保凭证",
+        "description": "办理挂号、入院和结算时出示医保电子凭证、有效身份证件或社会保障卡，并确认系统读取到正确参保地。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "无法直接结算时保存材料",
+        "description": "保存票据、费用清单、诊断和病历资料，尽快咨询参保地医保经办机构是否可手工报销及具体期限。异地急诊抢救人员按国家规则视同已备案，但仍应核对参保地待遇。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_insurance_status",
+        "text": "有效参保状态与参保地信息",
+        "required": true
+      },
+      {
+        "id": "check_filing",
+        "text": "异地就医备案记录或进度",
+        "required": true
+      },
+      {
+        "id": "check_designated_provider",
+        "text": "目标机构跨省联网定点查询结果",
+        "required": true
+      },
+      {
+        "id": "check_credential",
+        "text": "医保电子凭证、有效身份证件或社会保障卡",
+        "required": true
+      },
+      {
+        "id": "check_receipts",
+        "text": "未直接结算时的票据、费用清单和病历",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "国家医疗保障局、财政部",
+        "sourceTitle": "关于进一步做好基本医疗保险跨省异地就医直接结算工作的通知",
+        "sourceUrl": "https://www.nhsa.gov.cn/art/2022/7/26/art_104_8629.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2022-07-26",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "国家医疗保障局",
+        "sourceTitle": "“跨省异地”就医如何直接报销？",
+        "sourceUrl": "https://www.nhsa.gov.cn/art/2025/6/7/art_52_16755.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2025-06-07",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_dorm_move_in",
+    "title": "第一次住宿舍要准备什么？",
+    "summary": "按学校通知办理入住，核对设施，了解用电、门禁与报修规则。",
+    "categoryId": "housing",
+    "scenarioIds": [],
+    "keywords": [
+      "宿舍",
+      "入住",
+      "寝室",
+      "开学",
+      "宿舍安全"
+    ],
+    "aliases": [
+      "第一次住校",
+      "宿舍带什么",
+      "新生寝室准备"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先看学校和宿舍管理部门的正式入住通知，确认报到材料、床铺尺寸、可带物品和禁用电器。入住当天拍照核对设施，立即报修异常；记住门禁、用电、访客、消防和报修规则，贵重物品随身或上锁保管。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "只按学校正式通知准备",
+        "description": "查看录取材料、学校官网、迎新系统或宿舍管理部门通知，确认楼栋、入住时间、身份材料、床铺尺寸和用品限制，不要只凭往届清单购买。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "当面核对房间设施",
+        "description": "检查门锁、床架、插座、照明、窗户、消防通道和公共设施；对原有破损拍照并通过宿管或报修系统留痕，避免退宿时责任不清。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "弄清宿舍管理规则",
+        "description": "确认门禁、晚归登记、访客、卫生、调宿、用电功率和禁用物品等规定。不同学校和楼栋可能不同，以本校已公布制度为准。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "先处理消防和用电安全",
+        "description": "不堵塞通道，不私拉乱接电线，不拆停消防设施；只使用学校允许的电器，发现插座发热、漏电或设施损坏立即断开使用并报修。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "建立个人与共同生活边界",
+        "description": "离开时锁门，证件、手机和钱包不要随手放置；与室友尽早商量作息、卫生、空调和公共用品规则，遇到安全或冲突问题及时联系宿管、辅导员或学校保卫部门。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_notice",
+        "text": "学校正式入住通知和宿舍管理规定",
+        "required": true
+      },
+      {
+        "id": "check_identity",
+        "text": "学校要求的身份证明和报到材料",
+        "required": true
+      },
+      {
+        "id": "check_bedding",
+        "text": "按实际床铺尺寸准备的床上用品",
+        "required": true
+      },
+      {
+        "id": "check_inventory_photos",
+        "text": "入住时的设施清单、照片和报修记录",
+        "required": false
+      },
+      {
+        "id": "check_emergency_contacts",
+        "text": "宿管、辅导员、报修和校内保卫联系方式",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "教育部办公厅关于进一步加强高校学生住宿管理的通知",
+        "sourceUrl": "https://www.moe.gov.cn/s78/A12/szs_lef/moe_1422/s256/201209/t20120918_172192.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "福建省公安厅",
+        "sourceTitle": "学生在校住宿防盗的几点措施",
+        "sourceUrl": "https://gat.fujian.gov.cn/jwdt/ffzn/fd/201702/t20170215_2236279.htm",
+        "sourceLevel": "PROVINCIAL",
+        "publishedAt": "2017-02-15",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_failed_course",
+    "title": "挂科了怎么办？",
+    "summary": "先核对成绩与校规，再在期限内处理复核、补考或重修。",
+    "categoryId": "education",
+    "scenarioIds": [],
+    "keywords": [
+      "挂科",
+      "不及格",
+      "补考",
+      "重修",
+      "成绩"
+    ],
+    "aliases": [
+      "考试没过",
+      "课程不及格",
+      "挂科怎么办"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先在教务系统核对成绩构成，认为登记或评分流程有误时，在学校规定期限内申请复核。然后查本校培养方案和学籍规定，确认这门课能否补考、是否必须重修、何时选课以及对学分和毕业的影响；这些具体办法由学校规定。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "确认成绩和课程性质",
+        "description": "核对课程名称、学分、必修或选修性质、平时与期末成绩构成，并保存教务系统页面。先排除漏登、错登或缺考状态不符。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "需要时按期申请复核",
+        "description": "如果对成绩登记或评定程序有具体疑问，查看学校成绩复核办法，在期限内通过规定渠道提出，不要把向教师私下求改分当作正式复核。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "查清本校补考重修规则",
+        "description": "学校决定课程考核以及不及格课程是否补考或重修。确认报名入口、时间、资格、成绩记载方式、课程替代规则和是否影响奖助、推免、毕业或学位。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "尽快补上知识和学分计划",
+        "description": "联系任课教师、学院教务或学业导师分析失分原因，安排复习、选课和后续学期学分，避免先修课程冲突导致连锁延误。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "保留正式结果",
+        "description": "完成报名和考核后核对新成绩及学分是否入账。教育部规定，通过补考、重修获得的成绩应予标注，具体展示方式以学校成绩单制度为准。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_score",
+        "text": "教务系统成绩及成绩构成记录",
+        "required": true
+      },
+      {
+        "id": "check_school_rules",
+        "text": "本校学籍管理、成绩复核和补考重修规定",
+        "required": true
+      },
+      {
+        "id": "check_deadlines",
+        "text": "复核、报名、选课和考试时间",
+        "required": true
+      },
+      {
+        "id": "check_study_plan",
+        "text": "培养方案、已获学分和后续课程安排",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "普通高等学校学生管理规定",
+        "sourceUrl": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585064.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2017-02-04",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_first_hospital_visit",
+    "title": "第一次去医院怎么挂号？",
+    "summary": "判断是否急诊，选择正规医院与科室，实名挂号并带好就诊资料。",
+    "categoryId": "health",
+    "scenarioIds": [],
+    "keywords": [
+      "医院",
+      "挂号",
+      "就诊",
+      "急诊",
+      "科室"
+    ],
+    "aliases": [
+      "第一次看病",
+      "不知道挂什么科",
+      "医院怎么看病"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先判断是否存在危及生命或需要立即处理的情况；紧急时直接寻求急救或急诊。非紧急就诊通过医院官网、官方公众号、小程序、电话或现场窗口实名挂号，不确定科室时先询问医院预检分诊。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "先判断紧急程度",
+        "description": "出现意识异常、严重呼吸困难、大量出血、剧烈胸痛等紧急表现时，不要等待普通门诊号，应立即寻求急救或前往急诊。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "选择正规医院和官方入口",
+        "description": "根据距离、医院诊疗范围和医保定点情况选择医疗机构，只使用医院官网、官方账号、官方电话或现场窗口，避免付费号贩子。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "选择科室并实名挂号",
+        "description": "按最主要症状选择科室；拿不准时联系医院咨询或到预检分诊台说明症状。挂号使用患者本人的真实身份信息。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "整理症状和既往资料",
+        "description": "记录症状开始时间、变化、正在使用的药物、过敏史和既往疾病，带上近期相关检查和病历，便于医生快速判断。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "按院内流程就诊和结算",
+        "description": "提前到院完成报到、候诊、检查和取药；使用医保时携带医保电子凭证、社保卡或当地认可凭证，具体结算规则以参保地为准。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_identity",
+        "text": "本人有效身份证明或医院认可的实名凭证",
+        "required": true
+      },
+      {
+        "id": "check_medical_insurance",
+        "text": "医保电子凭证、社会保障卡或参保信息",
+        "required": false
+      },
+      {
+        "id": "check_symptom_notes",
+        "text": "症状时间线、用药和过敏信息",
+        "required": true
+      },
+      {
+        "id": "check_previous_records",
+        "text": "既往病历、检查报告和药物清单",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "国家卫生健康委员会",
+        "sourceTitle": "关于在公立医院施行预约诊疗服务工作的意见",
+        "sourceUrl": "https://www.nhc.gov.cn/bgt/s9514/200909/d5b3893fff4747cdbf91154f5bf109c8.shtml",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "国家卫生健康委员会",
+        "sourceTitle": "患者身份识别管理标准",
+        "sourceUrl": "https://www.nhc.gov.cn/wjw/s9494/202508/4e9010b04559455683e970927d872342.shtml",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2025-08-07",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_first_internship",
+    "title": "第一次找实习要注意什么？",
+    "summary": "核验单位和岗位，把工作、报酬、安全与退出条件写清楚。",
+    "categoryId": "career",
+    "scenarioIds": [],
+    "keywords": [
+      "实习",
+      "找实习",
+      "招聘",
+      "实习安全",
+      "实习报酬"
+    ],
+    "aliases": [
+      "第一次实习",
+      "实习避坑",
+      "大学生找工作经验"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先确认这是学校教学实习、自主实践还是以就业为目的的用工，再核验单位、地址、岗位和联系人。入职前用书面协议明确工作内容、时间、报酬、保险、保密、证明与退出条件；不交押金或培训费，不交由单位扣押身份证、学生证等证件。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "先分清实习性质",
+        "description": "确认实习是否计入培养方案、由学校安排或审核，还是个人寻找的社会实践或就业型实习。不同性质对应的学校责任、报酬约定和争议处理路径可能不同。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "核验单位和招聘信息",
+        "description": "通过国家企业信用信息公示系统、单位官网及学校渠道核对单位全称、经营状态、办公地址和联系人，警惕只用私人账号联系、岗位描述模糊或承诺异常高回报。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "问清实际工作条件",
+        "description": "确认每天做什么、由谁指导、工作地点和时段、是否出差或夜班、报酬及发放日、保险、安全培训、设备和费用承担，不要只看岗位名称。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "签书面协议并留副本",
+        "description": "把双方主体、期限、任务、考核、报酬、保险、知识产权、保密、实习证明、终止和争议处理写清。学校组织的实习还要按学校要求完成审批或三方实习协议。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "守住费用、证件和安全底线",
+        "description": "不要为获得岗位缴纳押金、保证金或高额培训费，不让单位扣押证件。把单位、地址和联系人告诉家人或老师；工作内容突变、存在危险或权益受损时及时留证并联系学校或有关部门。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_company",
+        "text": "单位全称、经营状态、地址和正式联系人",
+        "required": true
+      },
+      {
+        "id": "check_job_details",
+        "text": "岗位任务、地点、时间、指导人和安全条件",
+        "required": true
+      },
+      {
+        "id": "check_agreement",
+        "text": "各方签署的实习协议或其他书面约定",
+        "required": true
+      },
+      {
+        "id": "check_pay_insurance",
+        "text": "报酬、费用、保险和发放方式说明",
+        "required": true
+      },
+      {
+        "id": "check_emergency_contact",
+        "text": "学校指导教师、家人和单位紧急联系人",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "教育部关于加强和规范普通本科高校实习管理工作的意见",
+        "sourceUrl": "https://www.moe.gov.cn/srcsite/A08/s7056/201907/t20190724_392130.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2019-07-24",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "中华人民共和国司法部智慧普法平台",
+        "sourceTitle": "写给毕业生的劳动法律知识十问十答",
+        "sourceUrl": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxrdtj/202408/t20240811_504067.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2024-08-11",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_first_labor_contract",
+    "title": "第一次签劳动合同要注意什么？",
+    "summary": "核对单位和核心条款，拿到完整合同并及时查询社保缴费。",
+    "categoryId": "career",
+    "scenarioIds": [],
+    "keywords": [
+      "劳动合同",
+      "入职",
+      "试用期",
+      "工资",
+      "社会保险"
+    ],
+    "aliases": [
+      "第一次签合同",
+      "入职合同怎么看",
+      "试用期合同"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先核对公司主体和岗位承诺，逐条确认期限、岗位地点、工时、工资、试用期、社保、休假和解除条件。建立劳动关系应订立书面劳动合同，已先用工的应自用工之日起一个月内签订；不要签空白合同，不交押金，不让单位扣押证件，并拿走双方签署的完整副本。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "确认与你签约的单位",
+        "description": "核对营业执照名称、统一社会信用代码、办公地址和签约主体是否与实际用工单位一致，问清关联公司、劳务派遣或外包安排，不要只看品牌名。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "逐项核对必备内容",
+        "description": "确认合同期限、工作内容和地点、工时休息、劳动报酬、社会保险、劳动保护和职业危害防护，以及法律规定应纳入的其他事项。口头承诺要落到书面。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "重点检查试用期",
+        "description": "试用期包含在劳动合同期限内，不能只签独立试用期协议；同一单位与同一劳动者只能约定一次试用期，期限和工资还须符合法律限制。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "拒绝空白和扣押条款",
+        "description": "不要在工资、岗位或日期空白的合同上签字，不接受以担保等名义收取财物，也不要让单位扣押居民身份证或其他证件。培训服务期、竞业限制等条款应看清范围和责任。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "拿副本并持续核对",
+        "description": "签署后取得与单位所持一致的完整合同和附件，保存入职、考勤、工资记录；入职后通过当地官方渠道查询社会保险登记和缴费，发现不一致及时书面提出。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_company",
+        "text": "用人单位完整名称、信用代码和经营状态",
+        "required": true
+      },
+      {
+        "id": "check_core_terms",
+        "text": "岗位地点、工时、工资、期限和试用期条款",
+        "required": true
+      },
+      {
+        "id": "check_benefits",
+        "text": "社会保险、休假、补贴和其他待遇说明",
+        "required": true
+      },
+      {
+        "id": "check_restrictions",
+        "text": "保密、培训服务期、竞业和解除条款",
+        "required": false
+      },
+      {
+        "id": "check_copy",
+        "text": "双方签字盖章完整的合同及附件副本",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国人力资源和社会保障部",
+        "sourceTitle": "中华人民共和国劳动合同法",
+        "sourceUrl": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/zcfg/fl/202011/t20201102_394622_wap.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_first_rental",
+    "title": "第一次租房要注意什么？",
+    "summary": "核验出租权利和房屋安全，把租金、押金与退租条件写进合同。",
+    "categoryId": "housing",
+    "scenarioIds": [],
+    "keywords": [
+      "租房",
+      "租赁合同",
+      "押金",
+      "房东",
+      "合租"
+    ],
+    "aliases": [
+      "第一次在外租房",
+      "签租房合同",
+      "租房避坑"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先实地看房并核验出租人的身份和产权或合法出租权利，不租厨房、阳台、过道等被单独改作居住的空间。使用实名书面合同，把租金、押金、费用、维修、提前解约和退租验收写清楚；付款走可追溯渠道并保存凭证。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "核验人和房",
+        "description": "查看出租人身份证明、不动产权属证书或其他合法出租权利材料；如果是转租，核对原合同和出租人同意转租的依据。重要信息不一致时先停止付款。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "实地检查居住条件",
+        "description": "检查门锁、水电燃气、消防、漏水、噪声、通风和家具家电，了解通勤及周边环境。厨房、卫生间、阳台、过道、地下储藏室、车库等非居住空间不得被单独出租用于居住。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "算清全部费用",
+        "description": "问清租金、押金、中介费、物业费、水电燃气、网络费及其计价方式，确认由谁缴纳、何时结算，并警惕明显低价和催促立刻转账。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "逐条写进实名合同",
+        "description": "写明房屋、期限、租金、支付日、押金数额和返还时间、可扣押金情形、维修责任、续租、提前解约、转租及违约处理，不接受只有口头承诺的关键条件。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "交接留痕并办理备案",
+        "description": "签字后双方各留完整合同，按清单拍摄房屋和表底读数，付款备注用途并保留凭证。出租人应办理租赁合同备案；未办理时，承租人可以按当地平台和流程办理。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_lessor_identity",
+        "text": "出租人身份证明",
+        "required": true
+      },
+      {
+        "id": "check_rental_right",
+        "text": "产权证明或其他合法出租权利材料",
+        "required": true
+      },
+      {
+        "id": "check_contract",
+        "text": "双方签署的完整住房租赁合同及附件",
+        "required": true
+      },
+      {
+        "id": "check_handover",
+        "text": "房屋交接清单、照片、视频和表底读数",
+        "required": true
+      },
+      {
+        "id": "check_payment",
+        "text": "租金、押金和其他费用的付款凭证",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "国家行政法规库",
+        "sourceTitle": "住房租赁条例",
+        "sourceUrl": "https://xzfg.moj.gov.cn/front/law/detail?LawID=1774",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2025-07-16",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_five_insurances_one_fund",
+    "title": "五险一金是什么？",
+    "summary": "五险是五类社会保险，一金是住房公积金，缴费项目和账户都应核对。",
+    "categoryId": "career",
+    "scenarioIds": [],
+    "keywords": [
+      "五险一金",
+      "社会保险",
+      "养老保险",
+      "医疗保险",
+      "住房公积金"
+    ],
+    "aliases": [
+      "社保公积金",
+      "入职交哪些保险",
+      "五险有哪些"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "五险指基本养老、基本医疗、工伤、失业和生育保险，一金指住房公积金。具体缴费基数、比例和待遇受国家及参保缴存地规则影响，不能只看招聘中的一个总比例。入职后核对单位是否按你的真实信息办理登记，并通过当地人社、医保和公积金官方渠道查询账户。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "先理解五险分别保什么",
+        "description": "养老、医疗、工伤、失业、生育保险分别应对年老、疾病、工作伤害、失业和生育等法定风险；不同险种的单位和个人缴费责任并不相同。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "理解一金属于个人住房储金",
+        "description": "住房公积金由单位和在职职工缴存，单位和个人缴存部分都属于职工个人所有。账户可按条例及当地规则用于房租、购房贷款等住房消费。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "问清基数、比例和缴纳地",
+        "description": "入职前向单位确认社会保险和公积金的缴纳城市、起缴时间、缴费基数与比例。具体标准由法律和当地政策共同决定，不能用到手工资简单反推是否合规。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "入职后主动查询",
+        "description": "用本人身份通过官方人社、医保和住房公积金管理渠道查询登记、单位名称、缴费月份和基数。社会保险法规定个人有权查询缴费及权益记录。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "发现漏缴情形及时留痕",
+        "description": "保存劳动合同、工资条、个税和账户查询记录，先书面要求单位核对补正；仍有问题时，分别向参保地社会保险、医保或住房公积金主管经办渠道咨询处理。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_city",
+        "text": "社会保险和住房公积金缴纳城市",
+        "required": true
+      },
+      {
+        "id": "check_base_rate",
+        "text": "各项目缴费基数、比例和起缴月份",
+        "required": true
+      },
+      {
+        "id": "check_social_records",
+        "text": "人社、医保官方渠道的参保缴费记录",
+        "required": true
+      },
+      {
+        "id": "check_fund_records",
+        "text": "住房公积金官方渠道的账户缴存记录",
+        "required": true
+      },
+      {
+        "id": "check_employment",
+        "text": "劳动合同、工资条和扣款明细",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "国家市场监督管理总局",
+        "sourceTitle": "中华人民共和国社会保险法",
+        "sourceUrl": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e81d115419b4463ebb59ec46467fb136.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2018-12-29",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "国家行政法规库",
+        "sourceTitle": "住房公积金管理条例",
+        "sourceUrl": "https://xzfg.moj.gov.cn/front/law/detail?LawID=1822",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2026-08-10",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_how_to_call_police",
+    "title": "怎么报警？",
+    "summary": "先保证自身安全，向110准确说明地点、事件、人员和当前危险。",
+    "categoryId": "safety",
+    "scenarioIds": [],
+    "keywords": [
+      "报警",
+      "110",
+      "紧急求助",
+      "公安",
+      "安全"
+    ],
+    "aliases": [
+      "怎么打110",
+      "遇到危险怎么办",
+      "报案怎么说"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "正在发生违法犯罪、危及人身财产安全或需要公安机关紧急处置时，先离开直接危险并拨打110。开口先说准确地点，再简要说明发生了什么、是否有人受伤、嫌疑人或危险物情况和你的联系方式；按接警员提问如实回答，保持电话畅通。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "先确保自己能安全报警",
+        "description": "能离开冲突、火源、车辆或可疑人员时先到安全处，不为拍照取证重新进入危险。有人受伤、起火等情况，按现场需要同时寻求120或119等紧急救援。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "第一时间说清地点",
+        "description": "说明城市、道路门牌、楼栋房间或显著地标；在高速、野外或陌生地点可补充行进方向、里程标志和手机地图位置，便于警力找到现场。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "简要讲清当前警情",
+        "description": "说明发生时间、事情经过、涉及人数、是否有人受伤或被困、嫌疑人特征和去向、是否有刀具火源等即时危险。先讲正在发生和最紧急的信息。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "按接警员指引行动",
+        "description": "如实回答姓名、电话和位置，听从是否等待、撤离、急救或保护现场等指引。报警后保持手机畅通，情况变化时及时更新，不拨打无关电话占线。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "安全前提下保留证据",
+        "description": "不要随意移动重要物品或删除记录，保存照片视频、聊天、付款、人员和车辆特征及证人联系方式。非紧急的政务咨询、投诉等事项，可按当地分工使用12345等渠道。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_location",
+        "text": "准确位置、方向和附近显著标志",
+        "required": true
+      },
+      {
+        "id": "check_incident",
+        "text": "发生时间、经过和当前危险",
+        "required": true
+      },
+      {
+        "id": "check_people",
+        "text": "伤者、嫌疑人、被困人员和证人信息",
+        "required": false
+      },
+      {
+        "id": "check_contact",
+        "text": "可保持畅通的报警人联系电话",
+        "required": true
+      },
+      {
+        "id": "check_evidence",
+        "text": "在确保安全前提下保存的现场和电子证据",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "国务院办公厅",
+        "sourceTitle": "国务院办公厅关于推动12345政务服务便民热线与110报警服务台高效对接联动的意见",
+        "sourceUrl": "https://www.mee.gov.cn/zcwj/gwywj/202205/t20220516_982293.shtml",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2022-05-16",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "南通市公安局",
+        "sourceTitle": "拨打110相关问答",
+        "sourceUrl": "https://gaj.nantong.gov.cn/ntsgaj/wdzsk/content/a3e2fd14-5378-4a43-9bcc-90e6faf5b7cb.html",
+        "sourceLevel": "CITY",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_id_card_lost",
+    "title": "身份证丢了怎么办？",
+    "summary": "申报挂失、补领居民身份证，并同步处理可能受影响的账户。",
+    "categoryId": "documents",
+    "scenarioIds": [],
+    "keywords": [
+      "身份证",
+      "丢失",
+      "补办",
+      "异地补领",
+      "挂失"
+    ],
+    "aliases": [
+      "身份证找不到了",
+      "身份证被偷了",
+      "异地补身份证"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先向公安机关申报挂失并申请补领。居民身份证异地补领已全国通办，但所需材料、照片和领取方式以受理地公安机关清单为准；若银行卡或手机同时丢失，要分别立即挂失。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "确认是否伴随盗窃或人身危险",
+        "description": "若证件被盗、现场仍有危险或同时发生其他违法犯罪，先到安全地点并报警；单纯遗失可直接办理挂失和补领。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "查询受理地公安机关要求",
+        "description": "通过当地公安机关或政务服务平台，确认就近受理点、预约方式、身份证明、照片以及费用要求，不要照搬其他城市的材料清单。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "申报挂失并申请补领",
+        "description": "到受理点如实说明丢失情况，完成身份核验、照片和指纹等受理流程，保存受理凭证。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "处理近期必须使用证件的事项",
+        "description": "如近期需要乘车、考试或办理业务，向受理机关和具体业务单位询问可接受的临时身份证明；不要假设所有场景都接受同一种证明。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "检查相关账户",
+        "description": "留意银行卡、支付账户、电话卡等是否出现异常；发现可疑交易或冒名业务时，立即联系对应机构的官方渠道。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_identity_material",
+        "text": "受理地认可的身份证明材料",
+        "required": true
+      },
+      {
+        "id": "check_photo",
+        "text": "受理地要求的照片或照片回执",
+        "required": true
+      },
+      {
+        "id": "check_loss_notes",
+        "text": "丢失时间、地点及同时丢失物品的记录",
+        "required": false
+      },
+      {
+        "id": "check_receipt",
+        "text": "补领受理凭证",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "公安部（北京市人民政府转载）",
+        "sourceTitle": "户口居民身份证管理工作规范（试行）",
+        "sourceUrl": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202211/t20221116_2860246.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "江苏省人民政府",
+        "sourceTitle": "如何异地补办身份证？",
+        "sourceUrl": "https://www.js.gov.cn/art/2024/7/29/art_90838_6305.html",
+        "sourceLevel": "PROVINCIAL",
+        "publishedAt": "2024-07-29",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_internship_agreement",
+    "title": "实习协议是什么？",
+    "summary": "实习协议用来固定实习各方的身份、任务、报酬、安全与退出安排。",
+    "categoryId": "career",
+    "scenarioIds": [],
+    "keywords": [
+      "实习协议",
+      "三方实习协议",
+      "实习合同",
+      "实习报酬",
+      "实习证明"
+    ],
+    "aliases": [
+      "实习要签什么",
+      "实习合同怎么看",
+      "学校实习三方协议"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "实习协议是学生、实习单位，以及需要时学校之间确认实习安排和权利义务的书面文件。它通常不等同于劳动合同，也不能仅凭名称排除实际形成的劳动关系。签前重点看主体、岗位、期限、时间、报酬、保险、安全、证明、保密、知识产权、终止和争议处理。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "核对签约主体",
+        "description": "单位名称和盖章主体应与实际接收单位一致，写清学生身份和学校是否为协议方。个人微信联系人或部门名称不能替代完整单位主体。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "固定岗位与时间",
+        "description": "写清实习地点、岗位任务、指导人、起止日期、每日和每周安排、休息以及是否可能出差或调整岗位，避免使用无限扩张的概括表述。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "写清钱、保险和费用",
+        "description": "明确有无报酬、金额或算法、发放日、个税处理、交通餐饮住宿费用及保险安排。不要接受口头承诺覆盖书面条款。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "审查责任与退出条款",
+        "description": "关注安全培训、事故处理、保密和知识产权范围、实习证明条件、提前终止通知、违约责任和争议解决，警惕让学生承担不合理的无限责任。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "签完拿到完整副本",
+        "description": "确认各方签字或盖章、日期和附件齐全，保存纸质或可验证的电子副本。后续岗位、时间或报酬发生变化时，用书面补充约定留痕。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_parties",
+        "text": "学生、单位及学校等签约主体信息",
+        "required": true
+      },
+      {
+        "id": "check_work",
+        "text": "岗位、地点、期限、工时和指导安排",
+        "required": true
+      },
+      {
+        "id": "check_pay",
+        "text": "报酬、费用、税费和发放日期",
+        "required": true
+      },
+      {
+        "id": "check_safety",
+        "text": "保险、安全培训和事故处理条款",
+        "required": true
+      },
+      {
+        "id": "check_exit",
+        "text": "证明、终止、违约和争议处理条款",
+        "required": true
+      },
+      {
+        "id": "check_copy",
+        "text": "签字盖章完整的协议副本及附件",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "教育部关于加强和规范普通本科高校实习管理工作的意见",
+        "sourceUrl": "https://www.moe.gov.cn/srcsite/A08/s7056/201907/t20190724_392130.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2019-07-24",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "中华人民共和国司法部智慧普法平台",
+        "sourceTitle": "写给毕业生的劳动法律知识十问十答",
+        "sourceUrl": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxrdtj/202408/t20240811_504067.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2024-08-11",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_internship_unpaid",
+    "title": "实习不发工资怎么办？",
+    "summary": "先判断实习性质与既有约定，再按学校、民事或劳动争议路径处理。",
+    "categoryId": "career",
+    "scenarioIds": [],
+    "keywords": [
+      "实习工资",
+      "实习报酬",
+      "拖欠报酬",
+      "劳动关系",
+      "实习维权"
+    ],
+    "aliases": [
+      "实习不给钱",
+      "实习工资没发",
+      "实习生欠薪"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先保存协议、招聘信息、考勤、工作成果和报酬承诺，再判断是学校教学实习、一般民事实习，还是名为实习但实际可能形成劳动关系。一般实习报酬先看约定；普通本科高校组织的跟岗、顶岗实习有专门保障；若实际构成劳动关系，则按工资和劳动争议规则处理。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "固定工作和报酬证据",
+        "description": "保存实习协议、录用或招聘信息、聊天邮件、考勤、排班、任务指令、工作成果、付款记录和单位主体信息，整理应付金额及约定发放日。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "判断实习属于哪种情形",
+        "description": "学校社会实践通常不当然构成劳动关系；但持续提供劳动、接受单位劳动管理并取得报酬，尤其以就业为目的时，可能要按具体事实判断是否形成劳动关系，不能只看协议标题。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "核对适用的报酬依据",
+        "description": "一般实习有无报酬及标准主要看双方约定。对普通本科高校组织的跟岗、顶岗实习，教育部要求保障合理报酬，原则上不低于相同岗位试用期工资标准的80%；不要把这一标准机械套用到所有实习。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "书面催付并同步学校",
+        "description": "向协议相对方列明工作期间、约定、应付金额和付款期限。属于学校管理的实习时，同步联系指导教师、学院或教务部门，要求按学校与单位协议处理。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "选择对应争议渠道",
+        "description": "一般民事实习争议可按协议协商、调解、仲裁约定或民事诉讼处理；主张已形成劳动关系和拖欠工资的，可向用工所在地人社部门咨询，并依法申请劳动争议仲裁。事实复杂时先获得法律帮助。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_agreement",
+        "text": "实习协议、学校安排或其他书面约定",
+        "required": true
+      },
+      {
+        "id": "check_pay_promise",
+        "text": "报酬金额、算法和发放日期证据",
+        "required": true
+      },
+      {
+        "id": "check_work_evidence",
+        "text": "考勤、排班、指令、成果和管理记录",
+        "required": true
+      },
+      {
+        "id": "check_company",
+        "text": "实习单位完整主体和联系信息",
+        "required": true
+      },
+      {
+        "id": "check_demand",
+        "text": "书面催付及单位、学校回复记录",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国司法部智慧普法平台",
+        "sourceTitle": "写给毕业生的劳动法律知识十问十答",
+        "sourceUrl": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxrdtj/202408/t20240811_504067.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2024-08-11",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "教育部关于加强和规范普通本科高校实习管理工作的意见",
+        "sourceUrl": "https://www.moe.gov.cn/srcsite/A08/s7056/201907/t20190724_392130.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2019-07-24",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_makeup_vs_retake",
+    "title": "补考和重修有什么区别？",
+    "summary": "两者没有全国统一的操作定义，资格、成绩和流程以学校规定为准。",
+    "categoryId": "education",
+    "scenarioIds": [],
+    "keywords": [
+      "补考",
+      "重修",
+      "挂科",
+      "成绩",
+      "学分"
+    ],
+    "aliases": [
+      "补考还是重修",
+      "重修是什么意思",
+      "补考规则"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "通常，补考是课程不及格后再参加一次考核，重修是重新办理课程学习或考核；但谁能参加、是否重新上课、最终成绩如何计算和记载，并无全国统一操作规则。教育部要求学校自行规定，并对通过补考或重修取得的成绩作出标注。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "不要只按名称判断",
+        "description": "同样叫补考或重修，不同学校在报名资格、上课要求、考试形式、费用和成绩上限方面可能不同，先找到本校当前有效文件。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "比较时间和学习安排",
+        "description": "确认补考是在开学前后集中进行，还是需跟随下次课程；确认重修是否必须重新选课、到课、完成平时作业和全部考核。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "比较成绩与学分后果",
+        "description": "问清原成绩是否保留、新成绩如何计算、成绩单如何标注，以及对学分绩点、奖助、推免、毕业和学位审核的具体影响。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "确认自己是否符合资格",
+        "description": "缺考、缓考、考试违纪、实践课程或特殊课程的处理可能不同。根据自己的成绩状态向学院教务确认可选路径和截止时间。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "按正式系统完成报名",
+        "description": "在教务系统或学校指定渠道报名，保存成功页面并核对考试安排；口头告知不等于完成报名。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_status",
+        "text": "课程成绩、缺考或缓考等正式状态",
+        "required": true
+      },
+      {
+        "id": "check_rules",
+        "text": "本校当前补考、重修和成绩记载规则",
+        "required": true
+      },
+      {
+        "id": "check_compare",
+        "text": "报名资格、时间、上课要求和成绩影响对比",
+        "required": true
+      },
+      {
+        "id": "check_registration",
+        "text": "正式报名成功记录和考试安排",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "普通高等学校学生管理规定",
+        "sourceUrl": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585064.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2017-02-04",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_online_shopping_dispute",
+    "title": "网购被坑怎么维权？",
+    "summary": "先留存交易与商品证据，按商家、平台、12315和争议程序逐级处理。",
+    "categoryId": "safety",
+    "scenarioIds": [],
+    "keywords": [
+      "网购",
+      "退款",
+      "七天无理由",
+      "消费投诉",
+      "12315"
+    ],
+    "aliases": [
+      "网购被骗",
+      "商家不退款",
+      "买到假货"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先保存商品页面、订单、支付、聊天、物流和开箱证据，在平台内提出明确诉求并要求商家说明。符合条件的网络商品可在签收次日起七日内发出无理由退货通知，但定作、鲜活易腐等商品存在法定例外；协商不成可通过全国12315平台或12315热线投诉。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "先固定交易页面和实物",
+        "description": "保存商品标题、宣传承诺、规格、商家主体、订单、支付、发票、物流和完整沟通记录；有质量或错发问题时拍摄未剪辑开箱过程、标签和瑕疵。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "判断适用哪种退换理由",
+        "description": "区分质量不符合约定与七日无理由退货。定作、鲜活易腐、部分拆封数字商品、报刊等不适用无理由退货，其他特殊商品也可能需在购买流程中经消费者显著确认。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "在平台内发起售后",
+        "description": "选择与事实一致的原因，写明退款、退货、换货或修理等具体诉求并上传证据。需要无理由退货时，应在收到商品之日起七日内通知商家，并保留退货凭证。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "要求平台介入并保存结果",
+        "description": "商家拒绝或失联时申请平台处理，要求保全商家真实名称、地址和有效联系方式等信息，保存每次提交、平台裁定和退款状态。不要离开平台向陌生账户转保证金。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "通过12315等正式渠道处理",
+        "description": "协商不成，可通过全国12315平台、12315热线或市场监管部门公布渠道投诉，提供本人真实信息、经营者名称地址、具体诉求和事实依据；必要时再按约定仲裁或依法诉讼。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_listing",
+        "text": "商品页面、宣传承诺和商家主体截图",
+        "required": true
+      },
+      {
+        "id": "check_order",
+        "text": "订单、支付、发票和物流记录",
+        "required": true
+      },
+      {
+        "id": "check_product",
+        "text": "开箱、商品标签、瑕疵或不符情况证据",
+        "required": true
+      },
+      {
+        "id": "check_communications",
+        "text": "商家与平台沟通、售后和处理结果",
+        "required": true
+      },
+      {
+        "id": "check_request",
+        "text": "投诉对象、具体诉求和事实时间线",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "国家市场监督管理总局",
+        "sourceTitle": "网络购买商品七日无理由退货暂行办法",
+        "sourceUrl": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_26ca8fe29e184edd899fa0a7a060d935.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2017-01-06",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "国家市场监督管理总局",
+        "sourceTitle": "市场监督管理投诉举报处理办法",
+        "sourceUrl": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2026/art_e4d03a20c0fd49769e408c7bf3791ff5.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2025-12-30",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_phone_lost",
+    "title": "手机丢了怎么办？",
+    "summary": "先保护电话卡、支付和账号，再尝试定位设备并处理被盗风险。",
+    "categoryId": "documents",
+    "scenarioIds": [],
+    "keywords": [
+      "手机",
+      "丢失",
+      "电话卡",
+      "SIM卡",
+      "账号安全"
+    ],
+    "aliases": [
+      "手机找不到了",
+      "手机被偷了",
+      "手机卡挂失"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "借一部可信设备，先通过运营商官方渠道暂停或挂失电话卡，再保护支付和重要账号；使用手机厂商的官方查找功能定位或锁定设备。怀疑被盗时，在安全地点报警并保留设备信息。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "先停用丢失的电话卡",
+        "description": "从运营商官网、官方客服电话或营业厅办理停机、挂失或补卡咨询，防止短信验证码继续发送到丢失设备。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "保护支付和重要账号",
+        "description": "优先检查银行、支付、邮箱、社交账号和密码管理器；使用可信设备修改关键密码、退出丢失设备会话，并查看有无异常交易。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "使用官方设备查找功能",
+        "description": "登录手机厂商提供的官方设备查找服务，尝试定位、播放提示音、锁定或留下联系方式；不要点击陌生人发来的所谓定位链接。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "判断是否需要报警",
+        "description": "有被盗迹象、出现人身威胁或设备内已有财产损失时，向公安机关说明时间、地点、设备特征和可疑线索。不要独自前往危险地点取回设备。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "补卡后复查名下号码",
+        "description": "恢复号码后检查验证码、呼叫转移和账号绑定；如担心身份被冒用，可使用工信部全国移动电话卡“一证通查”核对名下电话卡数量。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_phone_number",
+        "text": "丢失手机号码与所属运营商",
+        "required": true
+      },
+      {
+        "id": "check_device_account",
+        "text": "手机厂商账号及可用的账号恢复方式",
+        "required": true
+      },
+      {
+        "id": "check_device_id",
+        "text": "设备序列号、IMEI 或购买凭证",
+        "required": false
+      },
+      {
+        "id": "check_loss_timeline",
+        "text": "最后使用时间、地点和可能的移动轨迹",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "工业和信息化部",
+        "sourceTitle": "电话用户真实身份信息登记规定",
+        "sourceUrl": "https://www.miit.gov.cn/jgsj/waj/wjfb/art/2020/art_a11f4139cdfc47a7a008f1476ce36ce0.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": null,
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "工业和信息化部通信管理局",
+        "sourceTitle": "全国移动电话卡“一证通查”",
+        "sourceUrl": "https://hljca.miit.gov.cn/bsfw/gsgg/art/2021/art_2a077216fcaf482a81a4b28988835480.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2021-10-15",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_rent_deposit_not_returned",
+    "title": "房东不退押金怎么办？",
+    "summary": "固定退租和房屋状态证据，要求房东说明扣款依据并按程序解决争议。",
+    "categoryId": "housing",
+    "scenarioIds": [],
+    "keywords": [
+      "租房",
+      "押金",
+      "退租",
+      "房东",
+      "租赁纠纷"
+    ],
+    "aliases": [
+      "房东不退钱",
+      "押金不退",
+      "退房被扣押金"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先对照合同中的押金数额、返还时间和可扣减情形，保存退租通知、交接记录、房屋照片、缴费和沟通证据。书面要求房东列明每笔扣款及依据；协商不成，可按合同和当地渠道申请调解，存在有效仲裁约定的按约申请仲裁，或依法起诉。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "重新核对合同",
+        "description": "找出押金金额、返还期限、退租通知、房屋恢复、费用结清、违约及争议解决条款，区分押金与尚欠租金或其他明确费用。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "固定退租状态和付款证据",
+        "description": "保存合同、押金和租金凭证、退租通知、钥匙交接、验房清单、房屋照片视频、表底读数及水电物业结清记录。没有共同验房时，尽快以带时间信息的方式记录现场。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "书面要求说明和返还",
+        "description": "通过可留痕渠道写明应退金额、收款方式和合同约定期限，要求出租人逐项说明扣款事实、金额和合同依据；不要只进行无法证明内容的电话争执。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "尝试正式协商或调解",
+        "description": "对合理维修或欠费凭证逐项核对。协商不成，可咨询租赁住房所在地房产管理部门、属地调解组织或合同约定的争议处理渠道，并保存受理记录。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "按约定进入争议程序",
+        "description": "存在有效仲裁约定的，按约申请仲裁；没有或不适用仲裁约定的，可以依法向有管辖权的人民法院起诉。金额或事实复杂时，可先向公共法律服务渠道或律师咨询。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_contract",
+        "text": "住房租赁合同、附件和补充协议",
+        "required": true
+      },
+      {
+        "id": "check_deposit_payment",
+        "text": "押金支付凭证或收据",
+        "required": true
+      },
+      {
+        "id": "check_move_out_evidence",
+        "text": "退租通知、交接清单和房屋状态照片视频",
+        "required": true
+      },
+      {
+        "id": "check_fee_records",
+        "text": "租金及水电燃气、物业等费用结清记录",
+        "required": true
+      },
+      {
+        "id": "check_communications",
+        "text": "要求返还押金及对方回复的完整记录",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "国家行政法规库",
+        "sourceTitle": "住房租赁条例",
+        "sourceUrl": "https://xzfg.moj.gov.cn/front/law/detail?LawID=1774",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2025-07-16",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_student_medical_insurance",
+    "title": "大学生医保怎么用？",
+    "summary": "确认参保地和待遇期，使用医保凭证就医，并按当地规则结算或报销。",
+    "categoryId": "health",
+    "scenarioIds": [],
+    "keywords": [
+      "大学生医保",
+      "居民医保",
+      "参保",
+      "报销",
+      "医保电子凭证"
+    ],
+    "aliases": [
+      "学校医保怎么用",
+      "大学医保报销",
+      "学生看病医保"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先向学校或参保地医保部门确认自己是否已参加城乡居民基本医保、参保地和待遇有效期。就医时使用医保电子凭证或社会保障卡；门诊、住院、校医院转诊和报销比例都以参保地当年度规则为准。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "确认参保状态",
+        "description": "向学校经办部门或参保地医保官方渠道核对是否缴费成功、参保地、待遇开始和结束时间；不要只凭学费账单推定已参保。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "查看学校和当地就医规则",
+        "description": "确认校医院是否为定点机构、普通门诊是否需要先在校内就诊或转诊、住院和门诊慢特病如何办理。具体规则由当地统筹区确定。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "准备医保凭证",
+        "description": "按当地要求激活并携带医保电子凭证、社会保障卡或有效身份证明，挂号和结算时使用本人信息。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "在定点机构就医结算",
+        "description": "就诊前核对机构是否定点，结算时确认医保支付和个人支付金额；无法直接结算时先问清是否可手工报销。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "保存报销材料",
+        "description": "保留收费票据、费用清单、诊断或出院记录、处方等原件，并在当地规定期限内提交；材料与期限以参保地清单为准。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_enrollment",
+        "text": "参保状态、参保地和待遇有效期截图或记录",
+        "required": true
+      },
+      {
+        "id": "check_credential",
+        "text": "医保电子凭证、社会保障卡或当地认可凭证",
+        "required": true
+      },
+      {
+        "id": "check_school_rules",
+        "text": "学校校医院、转诊和报销说明",
+        "required": false
+      },
+      {
+        "id": "check_medical_documents",
+        "text": "票据、费用清单、诊断和病历资料",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "国家医疗保障局等部门",
+        "sourceTitle": "关于进一步提高高校学生医疗保障质量的通知",
+        "sourceUrl": "https://www.nhsa.gov.cn/art/2025/1/26/art_52_15579.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2025-01-26",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "国家医疗保障局",
+        "sourceTitle": "关于大学生参加城乡居民基本医疗保险的答复",
+        "sourceUrl": "https://www.nhsa.gov.cn/art/2021/10/26/art_26_7237.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2021-10-26",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_suspension",
+    "title": "想休学怎么办？",
+    "summary": "先联系学校确认条件和影响，获批并办完手续后再离校。",
+    "categoryId": "education",
+    "scenarioIds": [],
+    "keywords": [
+      "休学",
+      "复学",
+      "学籍",
+      "暂停学业",
+      "退学"
+    ],
+    "aliases": [
+      "想暂停上学",
+      "休学怎么申请",
+      "身体原因休学"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "尽快联系学院辅导员和教务或学籍部门，查看本校休学条件、材料、期限及复学要求。休学通常需要本人申请并经学校批准，次数和期限由学校规定；未收到正式批准前不要直接停止上课或离校，休学期满前按学校要求申请复学。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "先处理紧急健康或安全问题",
+        "description": "如果因身心健康、家庭突发事件或人身安全需要暂停，先获得必要的医疗、求助或安全支持，再由本人或可信联系人尽快告知学校。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "确认休学规则与替代方案",
+        "description": "询问休学条件、最短和最长时间、申请节点、所需证明，以及缓考、请假、减修等是否更适合。具体次数和期限由学校规定。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "算清学籍和生活影响",
+        "description": "逐项确认已选课程与成绩、学费住宿费、奖助学金、校园账户、档案、党团关系、医保或商业保险，以及复学后的年级和培养方案。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "提交申请并完成离校手续",
+        "description": "按校内流程提交申请和真实证明，等待正式审批，再办理退课、宿舍、财务、图书及物品交接。保存批准文件和全部回执。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "提前准备复学",
+        "description": "记下休学到期日和复学申请窗口，提前询问是否需要健康证明或其他材料。应在学校规定期限内提出复学申请，不要等到期限已过才联系。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_policy",
+        "text": "本校休学、保留学籍和复学规定",
+        "required": true
+      },
+      {
+        "id": "check_application",
+        "text": "休学申请表及学校要求的证明材料",
+        "required": true
+      },
+      {
+        "id": "check_impact",
+        "text": "课程、费用、住宿、奖助和保险影响清单",
+        "required": true
+      },
+      {
+        "id": "check_approval",
+        "text": "学校正式批准文件和离校手续回执",
+        "required": true
+      },
+      {
+        "id": "check_return_date",
+        "text": "休学到期日、复学窗口和复学材料",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "普通高等学校学生管理规定",
+        "sourceUrl": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585064.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2017-02-04",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_telecom_fraud",
+    "title": "被电信诈骗了怎么办？",
+    "summary": "立即停止操作，联系支付机构并报警，完整保存账户、沟通和转账证据。",
+    "categoryId": "safety",
+    "scenarioIds": [],
+    "keywords": [
+      "电信诈骗",
+      "网络诈骗",
+      "报警",
+      "转账",
+      "止付"
+    ],
+    "aliases": [
+      "被骗钱了",
+      "刷单被骗",
+      "冒充客服诈骗"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "立刻停止继续转账、共享屏幕和提供验证码，尽快联系银行或支付平台说明涉诈交易并按正式流程处置，同时拨打110或到公安机关报案。保存聊天、电话、网页、应用、订单、账户和转账流水；不要再向所谓追款人员支付保证金或解冻费。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "立即切断诈骗操作",
+        "description": "停止转账、贷款、共享屏幕、远程控制和验证码提供，退出可疑群聊但不要删除记录。正在面临人身威胁时先到安全地点并报警。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "联系银行或支付平台",
+        "description": "通过卡面、官方应用或官网核实的客服电话说明交易时间、金额和收款账户，询问挂失、止付、账户保护和争议处理。是否能拦截或返还取决于资金状态，应越快越好。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "尽快向公安机关报案",
+        "description": "拨打110或前往公安机关，如实说明诈骗经过、损失金额、付款渠道和对方身份线索，按要求提交证据并保存接报案或受理信息。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "完整备份证据和时间线",
+        "description": "保存聊天与通话、短信、网址、应用名称和下载来源、对方账号、订单、二维码、转账流水、快递资料及设备异常，按时间顺序整理，不擅自篡改截图。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "保护账号并防二次诈骗",
+        "description": "在可信设备上修改被泄露账户密码，检查支付和登录设备，联系运营商或平台处理被盗账号。任何声称能内部追回但先收钱的人都需警惕，所有进度只通过公安、银行或平台正式渠道核实。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_transactions",
+        "text": "银行卡、支付平台或虚拟账户的完整交易流水",
+        "required": true
+      },
+      {
+        "id": "check_communications",
+        "text": "聊天、通话、短信、邮件和群聊记录",
+        "required": true
+      },
+      {
+        "id": "check_accounts",
+        "text": "对方姓名、账号、电话、网址、二维码等线索",
+        "required": true
+      },
+      {
+        "id": "check_bank_report",
+        "text": "银行或支付平台的工单和处置记录",
+        "required": true
+      },
+      {
+        "id": "check_police_report",
+        "text": "报警经过和公安机关提供的接报案信息",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "全国人民代表大会常务委员会",
+        "sourceTitle": "中华人民共和国反电信网络诈骗法",
+        "sourceUrl": "https://www.npc.gov.cn/c2/c30834/202209/t20220902_319186.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2022-09-02",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_tripartite_agreement",
+    "title": "三方协议是什么？",
+    "summary": "毕业生、用人单位与学校在正式劳动关系建立前确认就业安排的协议。",
+    "categoryId": "career",
+    "scenarioIds": [],
+    "keywords": [
+      "三方协议",
+      "就业协议",
+      "毕业去向",
+      "网签",
+      "应届毕业生"
+    ],
+    "aliases": [
+      "就业三方",
+      "学校网签",
+      "三方和劳动合同"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "三方协议通常是毕业生、用人单位和学校在正式建立劳动人事关系前确认就业意向、权利义务及毕业去向的书面协议，不等同于入职后的劳动合同。签前看清单位、岗位地点、待遇承诺、生效条件、违约和解约流程；毕业去向应由本人通过学校指定系统如实登记确认。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "先确认文件性质",
+        "description": "看清这是教育部门就业协议、单位录用意向书还是劳动合同。三方协议主要服务毕业就业安排，正式入职后仍应依法签订劳动合同。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "核对单位与录用条件",
+        "description": "确认用人单位主体、岗位、工作地点、入职时间、薪酬福利、落户或档案承诺，以及体检、资格审查、取得毕业证等生效条件，不接受空白内容。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "看清违约和解约流程",
+        "description": "重点阅读违约责任、解约条件、通知方式、学校系统操作和新协议申请规则。不要只听“随时能解约”或“必须赔固定金额”的口头说法。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "通过正式平台签约留存",
+        "description": "使用学校或教育部门指定的网签平台或规范纸质文本，完成本人确认、单位签署和学校审核，保存最终协议、补充条款和系统状态。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "如实确认毕业去向",
+        "description": "离校前按学校要求自主登记并确认毕业去向、档案和户口信息，变化时按当年规定及时更新。自2023年起就业报到证已取消，不再作为招聘录用、落户和档案接收转递等手续的必需材料。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_employer",
+        "text": "用人单位主体、岗位、地点和入职时间",
+        "required": true
+      },
+      {
+        "id": "check_offer_terms",
+        "text": "薪酬福利、录用条件及其他书面承诺",
+        "required": true
+      },
+      {
+        "id": "check_breach",
+        "text": "生效、违约、解除和重新签约条款",
+        "required": true
+      },
+      {
+        "id": "check_final_copy",
+        "text": "三方完成签署后的协议和平台记录",
+        "required": true
+      },
+      {
+        "id": "check_destination",
+        "text": "毕业去向、档案和户口信息确认记录",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "关于推荐使用全国高校毕业生网上签约平台的公告",
+        "sourceUrl": "https://www.moe.gov.cn/jyb_xxgk/s5743/s5744/A15/202207/t20220706_643711.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2022-07-06",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "中华人民共和国教育部",
+        "sourceTitle": "教育部办公厅关于建立高校毕业生毕业去向登记制度的通知",
+        "sourceUrl": "https://www.moe.gov.cn/srcsite/A15/s3265/202306/t20230621_1065229.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2023-06-08",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_003",
+        "sourceName": "中华人民共和国司法部智慧普法平台",
+        "sourceTitle": "写给毕业生的劳动法律知识十问十答",
+        "sourceUrl": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxrdtj/202408/t20240811_504067.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2024-08-11",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_wage_arrears",
+    "title": "公司拖欠工资怎么办？",
+    "summary": "核清欠薪金额并固定劳动和工资证据，再按人社、调解仲裁程序处理。",
+    "categoryId": "career",
+    "scenarioIds": [],
+    "keywords": [
+      "拖欠工资",
+      "欠薪",
+      "劳动仲裁",
+      "工资",
+      "人社"
+    ],
+    "aliases": [
+      "公司不发工资",
+      "工资晚发",
+      "老板欠钱"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "先保存能证明劳动关系、工作时间和工资标准的材料，算清每个工资周期的应发、已发和欠付金额，再向公司书面催付。协商无果，可向实际用工所在地人社部门咨询劳动保障监察渠道，或就劳动报酬争议依法申请劳动仲裁；不要因等待口头承诺而错过程序期限。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "立即备份关键证据",
+        "description": "保存劳动合同、入职材料、考勤排班、工作指令、工资条、银行流水、社保记录、离职材料和沟通记录。不要只把证据留在可能被停用的公司账号或设备中。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "逐月算清欠付金额",
+        "description": "列出约定工资、绩效或加班项目、应发日、实际收到金额和差额，区分工资、报销、借款等不同性质，保留计算依据。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "向公司书面催付",
+        "description": "通过可留痕渠道向有权负责人或人事财务说明欠薪期间、金额和依据，提出明确付款期限并保存回复。需要签收任何和解或离职文件时，先核对是否包含放弃权利条款。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "联系用工所在地人社渠道",
+        "description": "向实际用工所在地人力资源社会保障部门咨询劳动保障监察、欠薪线索反映或劳动争议受理渠道，并按要求提交单位信息、本人身份和证据。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "依法申请调解或仲裁",
+        "description": "劳动报酬争议可以协商、申请调解或向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除法律另有规定外再向法院起诉。注意仲裁时效及离职后期限，复杂情况尽早咨询。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_relation",
+        "text": "劳动合同、入职、工作指令和社保等关系证据",
+        "required": true
+      },
+      {
+        "id": "check_attendance",
+        "text": "考勤、排班、工作成果和加班记录",
+        "required": true
+      },
+      {
+        "id": "check_wage",
+        "text": "工资约定、工资条、银行流水和欠薪明细",
+        "required": true
+      },
+      {
+        "id": "check_company",
+        "text": "公司全称、信用代码和实际用工地址",
+        "required": true
+      },
+      {
+        "id": "check_demands",
+        "text": "书面催付、投诉或仲裁提交记录",
+        "required": true
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "中华人民共和国人力资源和社会保障部",
+        "sourceTitle": "中华人民共和国劳动争议调解仲裁法",
+        "sourceUrl": "https://www.mohrss.gov.cn/SYrlzyhshbzb/ztzl/ldrszytjzc/fgzc/202207/t20220714_457857.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2007-12-29",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "国务院客户端",
+        "sourceTitle": "被拖欠工资了？来这个全国平台反映！",
+        "sourceUrl": "https://app.www.gov.cn/govdata/gov/202112/25/480029/article.html",
+        "sourceLevel": "NATIONAL",
+        "publishedAt": "2021-12-25",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  },
+  {
+    "id": "guide_wrong_transfer",
+    "title": "转错账怎么办？",
+    "summary": "立即联系银行或支付平台，保存转账证据，并依法与收款人协商或追索。",
+    "categoryId": "finance",
+    "scenarioIds": [],
+    "keywords": [
+      "转错账",
+      "转账",
+      "不当得利",
+      "退款",
+      "收款人"
+    ],
+    "aliases": [
+      "钱转错人了",
+      "打错款",
+      "转账能撤回吗"
+    ],
+    "region": {
+      "level": "COUNTRY",
+      "province": null,
+      "city": null
+    },
+    "quickAnswer": "马上联系银行或支付平台说明误转，询问能否协助止付或联系收款人，并保存完整流水。已到账的款项通常不能由你自行撤回；协商不成时，可依据不当得利规则通过司法途径追索。",
+    "steps": [
+      {
+        "id": "step_01",
+        "order": 1,
+        "title": "立即联系转出机构",
+        "description": "从银行或支付平台官方入口报告误转，提供时间、金额、流水号和收款信息，询问能否止付、协助联系或登记争议。"
+      },
+      {
+        "id": "step_02",
+        "order": 2,
+        "title": "保存完整证据",
+        "description": "保留转账回单、账户流水、原本要付款的对象与用途、发现错误的时间，以及后续沟通记录。不要删除原始记录。"
+      },
+      {
+        "id": "step_03",
+        "order": 3,
+        "title": "通过可核实方式联系收款人",
+        "description": "清楚说明误转事实并提出原路返还，避免泄露密码、验证码或额外付款；对方要求先交手续费时先向平台核实。"
+      },
+      {
+        "id": "step_04",
+        "order": 4,
+        "title": "区分误转与诈骗",
+        "description": "如果转账是在欺骗、胁迫或冒充身份下完成，按诈骗处理，立即报警并向银行申请紧急处置，而不是只当普通误转。"
+      },
+      {
+        "id": "step_05",
+        "order": 5,
+        "title": "协商不成时咨询司法途径",
+        "description": "收款人拒绝返还时，可携证据咨询公共法律服务或法院，评估以不当得利为由起诉；收款人身份调取等问题按法院程序处理。"
+      }
+    ],
+    "checklist": [
+      {
+        "id": "check_transfer_receipt",
+        "text": "转账回单、流水号、时间和金额",
+        "required": true
+      },
+      {
+        "id": "check_original_purpose",
+        "text": "原本收款对象与付款用途证明",
+        "required": true
+      },
+      {
+        "id": "check_contact_records",
+        "text": "与银行、平台和收款人的沟通记录",
+        "required": true
+      },
+      {
+        "id": "check_police_or_legal",
+        "text": "报警受理信息或法律咨询记录",
+        "required": false
+      }
+    ],
+    "warnings": [],
+    "sections": [],
+    "sources": [
+      {
+        "id": "source_001",
+        "sourceName": "上海市司法局",
+        "sourceTitle": "企业支付货款转错账户，应如何追回钱款？",
+        "sourceUrl": "https://sh.12348.gov.cn/sites/12348/news-detail.jsp?category=373fbf8db1c74c21bd14ee152d674994&entityid=d1c6d53450e14c2eab371b1f21c7a244",
+        "sourceLevel": "CITY",
+        "publishedAt": "2024-03-19",
+        "verifiedAt": "2026-08-30"
+      },
+      {
+        "id": "source_002",
+        "sourceName": "河南省高级人民法院",
+        "sourceTitle": "转账时转错银行账户，属不当得利应当返还",
+        "sourceUrl": "https://www.hncourt.gov.cn/public/detail.php?id=163734",
+        "sourceLevel": "PROVINCIAL",
+        "publishedAt": "2016-04-07",
+        "verifiedAt": "2026-08-30"
+      }
+    ],
+    "verifiedAt": "2026-08-30",
+    "version": 1
+  }
+]

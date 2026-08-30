@@ -1,0 +1,99 @@
+{
+  "id": "guide_rent_deposit_not_returned",
+  "title": "房东不退押金怎么办？",
+  "summary": "固定退租和房屋状态证据，要求房东说明扣款依据并按程序解决争议。",
+  "categoryId": "housing",
+  "scenarioIds": [],
+  "keywords": [
+    "租房",
+    "押金",
+    "退租",
+    "房东",
+    "租赁纠纷"
+  ],
+  "aliases": [
+    "房东不退钱",
+    "押金不退",
+    "退房被扣押金"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先对照合同中的押金数额、返还时间和可扣减情形，保存退租通知、交接记录、房屋照片、缴费和沟通证据。书面要求房东列明每笔扣款及依据；协商不成，可按合同和当地渠道申请调解，存在有效仲裁约定的按约申请仲裁，或依法起诉。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "重新核对合同",
+      "description": "找出押金金额、返还期限、退租通知、房屋恢复、费用结清、违约及争议解决条款，区分押金与尚欠租金或其他明确费用。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "固定退租状态和付款证据",
+      "description": "保存合同、押金和租金凭证、退租通知、钥匙交接、验房清单、房屋照片视频、表底读数及水电物业结清记录。没有共同验房时，尽快以带时间信息的方式记录现场。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "书面要求说明和返还",
+      "description": "通过可留痕渠道写明应退金额、收款方式和合同约定期限，要求出租人逐项说明扣款事实、金额和合同依据；不要只进行无法证明内容的电话争执。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "尝试正式协商或调解",
+      "description": "对合理维修或欠费凭证逐项核对。协商不成，可咨询租赁住房所在地房产管理部门、属地调解组织或合同约定的争议处理渠道，并保存受理记录。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "按约定进入争议程序",
+      "description": "存在有效仲裁约定的，按约申请仲裁；没有或不适用仲裁约定的，可以依法向有管辖权的人民法院起诉。金额或事实复杂时，可先向公共法律服务渠道或律师咨询。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_contract",
+      "text": "住房租赁合同、附件和补充协议",
+      "required": true
+    },
+    {
+      "id": "check_deposit_payment",
+      "text": "押金支付凭证或收据",
+      "required": true
+    },
+    {
+      "id": "check_move_out_evidence",
+      "text": "退租通知、交接清单和房屋状态照片视频",
+      "required": true
+    },
+    {
+      "id": "check_fee_records",
+      "text": "租金及水电燃气、物业等费用结清记录",
+      "required": true
+    },
+    {
+      "id": "check_communications",
+      "text": "要求返还押金及对方回复的完整记录",
+      "required": true
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "国家行政法规库",
+      "sourceTitle": "住房租赁条例",
+      "sourceUrl": "https://xzfg.moj.gov.cn/front/law/detail?LawID=1774",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2025-07-16",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

@@ -1,0 +1,103 @@
+{
+  "id": "guide_first_hospital_visit",
+  "title": "第一次去医院怎么挂号？",
+  "summary": "判断是否急诊，选择正规医院与科室，实名挂号并带好就诊资料。",
+  "categoryId": "health",
+  "scenarioIds": [],
+  "keywords": [
+    "医院",
+    "挂号",
+    "就诊",
+    "急诊",
+    "科室"
+  ],
+  "aliases": [
+    "第一次看病",
+    "不知道挂什么科",
+    "医院怎么看病"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先判断是否存在危及生命或需要立即处理的情况；紧急时直接寻求急救或急诊。非紧急就诊通过医院官网、官方公众号、小程序、电话或现场窗口实名挂号，不确定科室时先询问医院预检分诊。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "先判断紧急程度",
+      "description": "出现意识异常、严重呼吸困难、大量出血、剧烈胸痛等紧急表现时，不要等待普通门诊号，应立即寻求急救或前往急诊。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "选择正规医院和官方入口",
+      "description": "根据距离、医院诊疗范围和医保定点情况选择医疗机构，只使用医院官网、官方账号、官方电话或现场窗口，避免付费号贩子。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "选择科室并实名挂号",
+      "description": "按最主要症状选择科室；拿不准时联系医院咨询或到预检分诊台说明症状。挂号使用患者本人的真实身份信息。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "整理症状和既往资料",
+      "description": "记录症状开始时间、变化、正在使用的药物、过敏史和既往疾病，带上近期相关检查和病历，便于医生快速判断。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "按院内流程就诊和结算",
+      "description": "提前到院完成报到、候诊、检查和取药；使用医保时携带医保电子凭证、社保卡或当地认可凭证，具体结算规则以参保地为准。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_identity",
+      "text": "本人有效身份证明或医院认可的实名凭证",
+      "required": true
+    },
+    {
+      "id": "check_medical_insurance",
+      "text": "医保电子凭证、社会保障卡或参保信息",
+      "required": false
+    },
+    {
+      "id": "check_symptom_notes",
+      "text": "症状时间线、用药和过敏信息",
+      "required": true
+    },
+    {
+      "id": "check_previous_records",
+      "text": "既往病历、检查报告和药物清单",
+      "required": false
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "国家卫生健康委员会",
+      "sourceTitle": "关于在公立医院施行预约诊疗服务工作的意见",
+      "sourceUrl": "https://www.nhc.gov.cn/bgt/s9514/200909/d5b3893fff4747cdbf91154f5bf109c8.shtml",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "国家卫生健康委员会",
+      "sourceTitle": "患者身份识别管理标准",
+      "sourceUrl": "https://www.nhc.gov.cn/wjw/s9494/202508/4e9010b04559455683e970927d872342.shtml",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2025-08-07",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

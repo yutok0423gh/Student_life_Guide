@@ -1,0 +1,112 @@
+{
+  "id": "guide_bank_card_frozen",
+  "title": "银行卡被冻结怎么办？",
+  "summary": "先向开户行查清限制类型和主责单位，再按正式渠道提交核验材料。",
+  "categoryId": "finance",
+  "scenarioIds": [],
+  "keywords": [
+    "银行卡",
+    "冻结",
+    "止付",
+    "限制交易",
+    "反诈"
+  ],
+  "aliases": [
+    "银行卡用不了",
+    "账户被冻",
+    "非柜面被限制"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先联系开户行，问清是银行风险控制、涉诈限制还是司法冻结，并取得主责单位、联系方式和所需材料。按银行或有权机关的正式渠道核验申诉；不要向任何“解冻中介”交保证金。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "向开户行确认限制信息",
+      "description": "询问限制类型、开始时间、影响范围、采取措施的主责单位、可联系渠道以及需要提交的材料，并记录客服工单或网点答复。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "整理资金来源和交易证据",
+      "description": "按时间顺序准备合同、聊天记录、订单、工资或奖学金证明、转账凭证等，说明相关资金的真实来源和用途。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "联系正式主责单位核验",
+      "description": "通过银行提供或政府官网核实的渠道联系采取措施的机构，询问申诉、补充材料和查询进度方式；不同原因没有统一解冻时限。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "保护基本生活与其他账户",
+      "description": "向银行和主责单位如实说明工资、学费或基本生活支出需求，并按其正式程序申请处理；同时检查其他账户是否收到风险提示。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "识别二次诈骗",
+      "description": "监管部门不会要求向个人账户缴纳“认证金”“保证金”来解冻。遇到此类要求，停止付款并通过机构官网重新核实。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_bank_response",
+      "text": "开户行提供的限制类型、主责单位和工单记录",
+      "required": true
+    },
+    {
+      "id": "check_identity",
+      "text": "本人有效身份证明",
+      "required": true
+    },
+    {
+      "id": "check_fund_evidence",
+      "text": "资金来源、交易背景和用途证明",
+      "required": true
+    },
+    {
+      "id": "check_contact_log",
+      "text": "与银行或主责单位沟通的时间线",
+      "required": false
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "云南省公安厅",
+      "sourceTitle": "银行卡被冻结的处理说明",
+      "sourceUrl": "https://gonganting.yn.gov.cn/pages_16767_858697.aspx",
+      "sourceLevel": "PROVINCIAL",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "全国人民代表大会常务委员会",
+      "sourceTitle": "中华人民共和国反电信网络诈骗法",
+      "sourceUrl": "https://www.npc.gov.cn/c2/c30834/202209/t20220902_319186.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2022-09-02",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_003",
+      "sourceName": "国家金融监督管理总局",
+      "sourceTitle": "警惕以“账户冻结”为名索要解冻资金的诈骗",
+      "sourceUrl": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=937724&generaltype=0&itemId=4100",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

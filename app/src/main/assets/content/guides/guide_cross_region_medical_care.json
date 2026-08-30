@@ -1,0 +1,108 @@
+{
+  "id": "guide_cross_region_medical_care",
+  "title": "异地看病怎么办？",
+  "summary": "跨省就医前办理备案、查询联网定点机构，并携带医保凭证直接结算。",
+  "categoryId": "health",
+  "scenarioIds": [],
+  "keywords": [
+    "异地就医",
+    "跨省就医",
+    "医保备案",
+    "直接结算",
+    "定点医院"
+  ],
+  "aliases": [
+    "外地看病",
+    "跨省看病怎么报销",
+    "异地医保"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "非紧急跨省就医前，先通过国家医保服务平台等官方渠道办理异地就医备案，并查询就医地的跨省联网定点医药机构。就医时出示医保电子凭证、有效身份证件或社会保障卡；未直接结算的费用按参保地规则处理。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "确认参保状态和就医类型",
+      "description": "确认医保待遇有效，并判断属于异地长期居住、异地转诊、异地急诊抢救还是其他临时外出就医，备案类型会影响材料。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "通过官方渠道备案",
+      "description": "可使用国家医保服务平台 App、国家异地就医备案小程序、国务院客户端或参保地经办窗口，按页面选择参保地、就医地和备案类型。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "查询联网定点机构",
+      "description": "在国家医保官方查询服务中确认目标医院或药店是否开通相应跨省直接结算，不要仅凭医院名称推定可以结算。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "就医时主动使用医保凭证",
+      "description": "办理挂号、入院和结算时出示医保电子凭证、有效身份证件或社会保障卡，并确认系统读取到正确参保地。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "无法直接结算时保存材料",
+      "description": "保存票据、费用清单、诊断和病历资料，尽快咨询参保地医保经办机构是否可手工报销及具体期限。异地急诊抢救人员按国家规则视同已备案，但仍应核对参保地待遇。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_insurance_status",
+      "text": "有效参保状态与参保地信息",
+      "required": true
+    },
+    {
+      "id": "check_filing",
+      "text": "异地就医备案记录或进度",
+      "required": true
+    },
+    {
+      "id": "check_designated_provider",
+      "text": "目标机构跨省联网定点查询结果",
+      "required": true
+    },
+    {
+      "id": "check_credential",
+      "text": "医保电子凭证、有效身份证件或社会保障卡",
+      "required": true
+    },
+    {
+      "id": "check_receipts",
+      "text": "未直接结算时的票据、费用清单和病历",
+      "required": false
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "国家医疗保障局、财政部",
+      "sourceTitle": "关于进一步做好基本医疗保险跨省异地就医直接结算工作的通知",
+      "sourceUrl": "https://www.nhsa.gov.cn/art/2022/7/26/art_104_8629.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2022-07-26",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "国家医疗保障局",
+      "sourceTitle": "“跨省异地”就医如何直接报销？",
+      "sourceUrl": "https://www.nhsa.gov.cn/art/2025/6/7/art_52_16755.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2025-06-07",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

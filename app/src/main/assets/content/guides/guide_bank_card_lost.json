@@ -1,0 +1,103 @@
+{
+  "id": "guide_bank_card_lost",
+  "title": "银行卡丢了怎么办？",
+  "summary": "立即通过发卡银行官方渠道挂失，并核对有无非本人交易。",
+  "categoryId": "finance",
+  "scenarioIds": [],
+  "keywords": [
+    "银行卡",
+    "丢失",
+    "挂失",
+    "盗刷",
+    "补卡"
+  ],
+  "aliases": [
+    "卡丢了",
+    "银行卡找不到",
+    "银行卡被偷"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "立即从发卡银行官网、官方 App、卡背面留存信息或营业网点找到官方渠道办理挂失，并检查近期交易。发现非本人交易时，马上向银行报告、保存证据；有盗窃或诈骗线索再报警。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "通过官方渠道挂失",
+      "description": "联系发卡银行办理临时或正式挂失，确认卡片当前能否交易以及后续补卡要求。不要使用短信或搜索广告里未经核实的号码。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "检查账户交易",
+      "description": "查看丢失前后的消费、取现、转账和绑定支付记录，把可疑交易的时间、金额、商户与流水号截图保存。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "报告非本人交易",
+      "description": "如发现异常，立即向银行说明并按其争议处理流程提交材料；涉及盗窃、诈骗或持续损失时，向公安机关报案并保存受理信息。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "办理补卡并恢复绑定",
+      "description": "按发卡银行要求携带有效身份证明补卡，随后逐项更新工资、助学金、自动扣款和支付平台绑定。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "继续观察账户",
+      "description": "补卡后仍要关注交易提醒；如果身份证和手机也丢失，分别完成证件、电话卡和重要账号的安全处理。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_bank_name",
+      "text": "发卡银行名称与卡号后四位",
+      "required": true
+    },
+    {
+      "id": "check_identity",
+      "text": "银行认可的有效身份证明",
+      "required": true
+    },
+    {
+      "id": "check_transactions",
+      "text": "近期交易记录和可疑流水截图",
+      "required": false
+    },
+    {
+      "id": "check_case_receipt",
+      "text": "报警或银行争议受理凭证",
+      "required": false
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "中国人民银行",
+      "sourceTitle": "支付结算办法",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengwugongkai/attachDir/2025/11/2025111818072979794.pdf",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "中国人民银行",
+      "sourceTitle": "金融网络安全知识手册",
+      "sourceUrl": "https://www.pbc.gov.cn/eportal/fileDir/image_public/UserFiles/goutongjiaoliu/upload/File/%E9%87%91%E8%9E%8D%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%9F%A5%E8%AF%86%E6%89%8B%E5%86%8C%281%29.pdf",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": null,
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}

@@ -1,0 +1,103 @@
+{
+  "id": "guide_student_medical_insurance",
+  "title": "大学生医保怎么用？",
+  "summary": "确认参保地和待遇期，使用医保凭证就医，并按当地规则结算或报销。",
+  "categoryId": "health",
+  "scenarioIds": [],
+  "keywords": [
+    "大学生医保",
+    "居民医保",
+    "参保",
+    "报销",
+    "医保电子凭证"
+  ],
+  "aliases": [
+    "学校医保怎么用",
+    "大学医保报销",
+    "学生看病医保"
+  ],
+  "region": {
+    "level": "COUNTRY",
+    "province": null,
+    "city": null
+  },
+  "quickAnswer": "先向学校或参保地医保部门确认自己是否已参加城乡居民基本医保、参保地和待遇有效期。就医时使用医保电子凭证或社会保障卡；门诊、住院、校医院转诊和报销比例都以参保地当年度规则为准。",
+  "steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "确认参保状态",
+      "description": "向学校经办部门或参保地医保官方渠道核对是否缴费成功、参保地、待遇开始和结束时间；不要只凭学费账单推定已参保。"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "查看学校和当地就医规则",
+      "description": "确认校医院是否为定点机构、普通门诊是否需要先在校内就诊或转诊、住院和门诊慢特病如何办理。具体规则由当地统筹区确定。"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "准备医保凭证",
+      "description": "按当地要求激活并携带医保电子凭证、社会保障卡或有效身份证明，挂号和结算时使用本人信息。"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "在定点机构就医结算",
+      "description": "就诊前核对机构是否定点，结算时确认医保支付和个人支付金额；无法直接结算时先问清是否可手工报销。"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "保存报销材料",
+      "description": "保留收费票据、费用清单、诊断或出院记录、处方等原件，并在当地规定期限内提交；材料与期限以参保地清单为准。"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check_enrollment",
+      "text": "参保状态、参保地和待遇有效期截图或记录",
+      "required": true
+    },
+    {
+      "id": "check_credential",
+      "text": "医保电子凭证、社会保障卡或当地认可凭证",
+      "required": true
+    },
+    {
+      "id": "check_school_rules",
+      "text": "学校校医院、转诊和报销说明",
+      "required": false
+    },
+    {
+      "id": "check_medical_documents",
+      "text": "票据、费用清单、诊断和病历资料",
+      "required": false
+    }
+  ],
+  "warnings": [],
+  "sections": [],
+  "sources": [
+    {
+      "id": "source_001",
+      "sourceName": "国家医疗保障局等部门",
+      "sourceTitle": "关于进一步提高高校学生医疗保障质量的通知",
+      "sourceUrl": "https://www.nhsa.gov.cn/art/2025/1/26/art_52_15579.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2025-01-26",
+      "verifiedAt": "2026-08-30"
+    },
+    {
+      "id": "source_002",
+      "sourceName": "国家医疗保障局",
+      "sourceTitle": "关于大学生参加城乡居民基本医疗保险的答复",
+      "sourceUrl": "https://www.nhsa.gov.cn/art/2021/10/26/art_26_7237.html",
+      "sourceLevel": "NATIONAL",
+      "publishedAt": "2021-10-26",
+      "verifiedAt": "2026-08-30"
+    }
+  ],
+  "verifiedAt": "2026-08-30",
+  "version": 1
+}
